@@ -100,7 +100,7 @@ const VantaGlobe: React.FC = () => {
       >
         <h1 className="text-4xl md:text-6xl font-bold mb-4">IEEE Indiscon 2025</h1>
         <p className="text-lg md:text-xl mb-6 max-w-2xl  text-white">
-        IEEE INDISCON-2025, the 6th edition of the international conference series, will be hosted by NIT Rourkela with IEEE Rourkela Subsection's technical sponsorship. It aims to provide a platform for researchers to share work, network, and collaborate through keynotes, talks, exhibits, and a Graduate Research Forum.
+        IEEE INDISCON-2025, the 6th edition of the international conference series, will be hosted by NIT Rourkela with IEEE Rourkela Subsection&aposs technical sponsorship. It aims to provide a platform for researchers to share work, network, and collaborate through keynotes, talks, exhibits, and a Graduate Research Forum.
         </p>
         <motion.a
           href="/about"
