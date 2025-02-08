@@ -1,12 +1,12 @@
 import { AnimatedGridBackground } from '@/components/animatingBackground'
-import Announcements from '@/components/Announcements'
+import CallForPapers from '@/components/CallForPapers'
 import React from 'react'
 
 export default function page() {
   return (
     <>
       <AnimatedGridBackground/>
-      <Announcements/>
+      <CallForPapers/>
     </>
   )
 }

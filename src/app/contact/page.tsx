@@ -1,12 +1,12 @@
 import { AnimatedGridBackground } from '@/components/animatingBackground'
-import Announcements from '@/components/Announcements'
+import ContactUs from '@/components/ContactUs'
 import React from 'react'
 
 export default function page() {
   return (
     <>
       <AnimatedGridBackground/>
-      <Announcements/>
+      <ContactUs/>
     </>
   )
 }

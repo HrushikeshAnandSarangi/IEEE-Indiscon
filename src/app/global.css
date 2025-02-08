@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply antialiased;
+}
+
+main {
+  backdrop-filter: blur(20px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
