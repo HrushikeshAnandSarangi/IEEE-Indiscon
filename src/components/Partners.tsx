@@ -32,14 +32,11 @@ export default function Partners() {
         <h2 className="text-5xl md:text-6xl font-extrabold mb-6 text-black text-center drop-shadow-lg">
           Our Partners
         </h2>
-        <h3 className="text-4xl font-bold text-black text-center mb-10">
-          Featured Partners
-        </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg rounded-lg p-6 flex flex-col items-center justify-center transform transition duration-500 hover:scale-110 hover:rotate-3 hover:shadow-2xl"
+              className="bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg rounded-lg p-6 flex flex-col items-center justify-center transform transition duration-500 hover:scale-110  hover:shadow-2xl"
             >
               <Image
                 src={partner.logo}

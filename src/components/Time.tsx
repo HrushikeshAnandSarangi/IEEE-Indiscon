@@ -19,7 +19,7 @@ const CountdownBox = ({ value, label }: { value: number; label: string }) => (
 );
 
 const Countdown = () => {
-  const eventDate = "2025-12-31 23:59:59";
+  const eventDate = "2025-8-20 23:59:59";
 
   const calculateTimeLeft = () => {
     const eventTime = new Date(eventDate).getTime();
@@ -48,7 +48,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="relative w-full bg-gradient-to-br from-blue-600 to-blue-700 py-16 md:py-20 overflow-hidden isolate">
+    <div className="relative w-screen bg-gradient-to-br from-blue-600 to-blue-700 py-16 md:py-20 overflow-hidden isolate">
       {/* Animated background gradient */}
       <div className="absolute inset-0 opacity-20 animate-gradient-rotate">
         <div className="absolute -inset-24 bg-[conic-gradient(from_90deg_at_50%_50%,#2563eb_0%,#3b82f6_50%,#2563eb_100%)] animate-spin [animation-duration:20s]" />
@@ -60,7 +60,7 @@ const Countdown = () => {
             Countdown to Event
           </h2>
           <p className="text-lg md:text-xl text-white/80 mb-12 md:mb-16 font-medium">
-            December 31, 2025
+            August 21, 2025
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">

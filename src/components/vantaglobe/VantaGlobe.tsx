@@ -1,8 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import * as THREE from 'three';
-
-// Define the VantaEffect interface to avoid TypeScript errors
 interface VantaEffect {
   destroy: () => void;
   camera?: THREE.PerspectiveCamera;
@@ -91,18 +89,18 @@ const VantaGlobe: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-screen" onMouseMove={handleMouseMove}>
+    <div className="relative w-screen h-screen " onMouseMove={handleMouseMove}>
       <motion.div ref={containerRef} className="absolute top-0 left-0 w-full h-full" />
 
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6"
+        className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6 bg-[#151515] bg-opacity-40 "
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to the Future</h1>
-        <p className="text-lg md:text-xl mb-6 max-w-2xl">
-          Explore the world of technology and innovation with interactive 3D visualization.
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">IEEE Indiscon 2025</h1>
+        <p className="text-lg md:text-xl mb-6 max-w-2xl  text-white">
+        IEEE INDISCON-2025, the 6th edition of the international conference series, will be hosted by NIT Rourkela with IEEE Rourkela Subsection's technical sponsorship. It aims to provide a platform for researchers to share work, network, and collaborate through keynotes, talks, exhibits, and a Graduate Research Forum.
         </p>
         <motion.a
           href="/about"

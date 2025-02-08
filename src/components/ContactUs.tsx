@@ -35,7 +35,7 @@ export default function ContactUs() {
           {contacts.map((contact, index) => (
             <div
               key={contact.id}
-              className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-center transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl"
+              className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-center transform transition duration-500 hover:scale-105  hover:shadow-2xl"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-black text-2xl font-bold">
