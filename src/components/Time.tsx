@@ -56,10 +56,10 @@ const Countdown = () => {
 
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
-            Countdown to Event
+          <h2 className="text-3xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+            Countdown to Indiscon 2025
           </h2>
-          <p className="text-lg md:text-xl text-white/80 mb-12 md:mb-16 font-medium">
+          <p className="text-lg md:text-xl text-white/90 mb-12 md:mb-16 font-semibold">
             August 21, 2025
           </p>
 
@@ -70,8 +70,6 @@ const Countdown = () => {
           </div>
         </div>
       </div>
-
-      {/* Subtle particle overlay */}
       <div className="absolute inset-0 opacity-30 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBmaWxsPSIjZmZmIi8+PC9zdmc+')]" />
     </div>
   );
