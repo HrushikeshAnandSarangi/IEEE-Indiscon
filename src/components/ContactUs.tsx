@@ -38,7 +38,7 @@ export default function ContactUs() {
               className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-center transform transition duration-500 hover:scale-105  hover:shadow-2xl"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-black text-2xl font-bold">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-b from-[#06b6d4] via-[#2563eb] to-[#6366f1] flex items-center justify-center text-black text-2xl font-bold">
                 {contact.name
                   .split(" ")
                   .map((n) => n[0])
