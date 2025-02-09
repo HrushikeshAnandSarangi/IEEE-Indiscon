@@ -93,7 +93,7 @@ const VantaGlobe: React.FC = () => {
       <motion.div ref={containerRef} className="absolute top-0 left-0 w-full h-full" />
 
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6 bg-[#151515] bg-opacity-40 "
+        className="absolute w-full inset-0 flex flex-col items-center justify-center text-center text-white px-6 bg-[#151515] bg-opacity-40  "
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
