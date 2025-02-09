@@ -7,9 +7,10 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-body {
-  @apply antialiased;
-  font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=PP+Editorial+New:wght@400;700&display=swap');
+
+* {
+  font-family: 'PP Editorial New', sans-serif;
 }
 body, html {
   overflow-x: hidden;
