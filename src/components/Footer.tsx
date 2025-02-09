@@ -24,7 +24,7 @@ const MotionLink = motion(Link)
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-sky-400 to-blue-700 text-white w-full ">
+    <footer className="bg-gradient-to-r from-sky-600 to-blue-800 text-white w-full ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <motion.div
