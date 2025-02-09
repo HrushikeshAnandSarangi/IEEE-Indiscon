@@ -27,7 +27,7 @@ export default function Speakers() {
   return (
     <section className="relative py-20  overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 relative text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900">
           Our Speakers
         </h2>
         
@@ -46,8 +46,8 @@ export default function Speakers() {
               />
             </div>
             <div className="md:w-2/3 md:px-8 text-center md:text-left">
-              <h4 className="text-3xl font-semibold text-gray-800">{speaker.name}</h4>
-              <p className="text-lg text-gray-600 mt-4 leading-relaxed">{speaker.introduction}</p>
+              <h4 className="text-3xl font-bold text-gray-800">{speaker.name}</h4>
+              <p className="text-lg text-slate-900 mt-4 font-semibold leading-relaxed">{speaker.introduction}</p>
             </div>
           </div>
         ))}

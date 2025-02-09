@@ -63,7 +63,7 @@ For more details visit www.nitrkl.ac.in`,
   return (
     <div className="py-20 px-4 sm:px-6 lg:px-8 ">
       <motion.h2
-        className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900"
+        className="text-4xl md:text-5xl font-extrabold text-center mb-16 text-gray-900"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -100,10 +100,10 @@ For more details visit www.nitrkl.ac.in`,
             </motion.div>
 
             <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? 'lg:pl-6' : 'lg:pr-6'}`}>
-              <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-3xl md:text-3xl font-bold text-gray-900 mb-4">
                 {section.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-slate-900 font-semibold leading-relaxed">
                 {section.content}
               </p>
             </div>
