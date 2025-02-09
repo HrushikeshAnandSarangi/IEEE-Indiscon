@@ -49,7 +49,7 @@ const Countdown = () => {
 
   return (
     <div className="relative w-screen bg-gradient-to-br from-blue-600 to-blue-700 py-16 md:py-20 overflow-hidden isolate">
-      {/* Animated background gradient */}
+      
       <div className="absolute inset-0 opacity-20 animate-gradient-rotate">
         <div className="absolute -inset-24 bg-[conic-gradient(from_90deg_at_50%_50%,#2563eb_0%,#3b82f6_50%,#2563eb_100%)] animate-spin [animation-duration:20s]" />
       </div>
