@@ -1,10 +1,12 @@
 "use client"
 
 const contacts = [
-  { id: 1, name: "John Doe", designation: "Event Coordinator", email: "johndoe@example.com" },
-  { id: 2, name: "Jane Smith", designation: "Technical Lead", email: "janesmith@example.com" },
-  { id: 3, name: "Alice Johnson", designation: "Marketing Head", email: "alicejohnson@example.com" },
-  { id: 4, name: "Bob Williams", designation: "Sponsorship Manager", email: "bobwilliams@example.com" },
+  { id: 1, name: "Dr. Poonam Singh", designation: "General Chair", email: "psingh@nitrkl.ac.in" },
+  { id: 2, name: "Dr. Susmita Das", designation: "General Chair", email: "sdas@nitrkl.ac.in" },
+  { id: 3, name: "Dr. A. K. Swain", designation: "Organizing Chair", email: "swaina@nitrkl.ac.in" },
+  { id: 4, name: "Dr. S. M. Hiremath", designation: "Organizing Chair", email: "hiremaths@nitrkl.ac.in" },
+  { id: 5, name: "Dr. A. Ghosh", designation: "Organizing Chair", email: "ghosha@ece.nits.ac.in" },
+  { id: 6, name: "Dr. T. R. Choudhury", designation: "Organizing Chair", email: "choudhury@nitrkl.ac.in" },
 ]
 
 const EmailIcon = () => (
@@ -26,33 +28,32 @@ const EmailIcon = () => (
 
 export default function ContactUs() {
   return (
-    <section className="relative py-20 overflow-hidden ">
-      <div className="absolute inset-0 bg-white opacity-10 transform rotate-45 skew-y-12" aria-hidden="true" />
+    <section className="relative py-20  flex flex-col items-center">
       <div className="container relative mx-auto px-4 lg:px-8 text-center">
-        <h2 className="text-5xl md:text-6xl font-extrabold mb-6 text-black drop-shadow-lg">Contact Us</h2>
+        <h2 className="text-5xl md:text-6xl font-extrabold mb-12 text-black drop-shadow-lg">Contact Us</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
           {contacts.map((contact, index) => (
             <div
               key={contact.id}
-              className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-center transform transition duration-500 hover:scale-105  hover:shadow-2xl"
+              className="bg-white bg-opacity-60 shadow-lg rounded-xl p-6 text-center w-80 transform transition duration-500 hover:scale-105"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-b from-[#06b6d4] via-[#2563eb] to-[#6366f1] flex items-center justify-center text-black text-2xl font-bold">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-b from-[#06b6d4] via-[#2563eb] to-[#6366f1] flex items-center justify-center text-white text-2xl font-bold">
                 {contact.name
                   .split(" ")
                   .map((n) => n[0])
                   .join("")}
               </div>
               <h3 className="text-2xl font-bold text-black mb-2">{contact.name}</h3>
-              <p className="text-lg text-black opacity-80 mb-3">{contact.designation}</p>
+              <p className="text-lg text-gray-700 mb-3">{contact.designation}</p>
               <a
                 href={`mailto:${contact.email}`}
-                className="inline-flex items-center text-black font-medium hover:underline transition duration-300 group"
+                className="inline-flex items-center text-blue-600 font-medium hover:underline transition duration-300"
                 aria-label={`Email ${contact.name}`}
               >
                 <EmailIcon />
-                <span className="group-hover:text-orange-500">{contact.email}</span>
+                <span>{contact.email}</span>
               </a>
             </div>
           ))}
@@ -61,4 +62,3 @@ export default function ContactUs() {
     </section>
   )
 }
-
