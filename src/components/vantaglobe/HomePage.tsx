@@ -10,7 +10,6 @@ const HomePage = () => {
   return (
     <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
       <Globe />
-      {/* Add your other content here */}
     </div>
   );
 };

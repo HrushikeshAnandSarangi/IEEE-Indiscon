@@ -75,7 +75,7 @@ export default function Committee() {
   return (
     <section className="relative py-20 overflow-hidden flex flex-col items-center">
       <div className="container mx-auto px-4 lg:px-8 relative text-center flex flex-col items-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900">
           Our Committees
         </h2>
         
