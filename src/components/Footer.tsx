@@ -24,7 +24,7 @@ const MotionLink = motion(Link)
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-sky-600 to-blue-800 text-white w-full ">
+    <footer className="bg-gradient-to-br from-blue-600 via-[#2f24c1] to-[#3f8dd1] text-white w-full ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <motion.div
@@ -34,7 +34,7 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex items-center mb-6">
-              <Image src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1739141907/IEEE/mdglklfynkw029ds5qkd.svg" alt="TechCorp Logo" width={200} height={100} className="mr-3" />
+              <Image src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1739561164/IEEE/bpxhcknsvtilxcaycrie.svg" alt="TechCorp Logo" width={200} height={100} className="mr-3" />
             </Link>
             <p className="text-blue-100 mb-4">
             IEEE INDISCON-2025 is the 6th edition of the international conference series INDISCON to be organized by the National Institute of Technology Rourkela.
