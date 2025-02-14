@@ -53,7 +53,7 @@ const CallForPapers: React.FC = () => {
               href="https://drive.google.com/file/d/18wzYcfT6iQiesNpu9RgIMpg3oyfhE03N/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-800 transition duration-300 transform hover:scale-105 shadow-lg"
+              className="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-800 hover:text-white transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Download Brochure
             </a>
@@ -61,7 +61,7 @@ const CallForPapers: React.FC = () => {
               href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FINDISCON2025"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-black text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition duration-300 transform hover:scale-105 shadow-lg"
+              className="bg-black text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-800 hover:text-white transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Submit Paper
             </a>
