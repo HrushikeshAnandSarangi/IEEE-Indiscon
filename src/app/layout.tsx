@@ -6,7 +6,6 @@ export const metadata = {
   title: 'IEEE-INDISCON',
   description: 'ieeeindiscon.org',
 }
-
 export default function RootLayout({
   children,
 }: {

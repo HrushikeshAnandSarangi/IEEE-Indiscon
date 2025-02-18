@@ -1,13 +1,14 @@
+'use client'
 import { AnimatedGridBackground } from '@/components/animatingBackground'
 import Announcements from '@/components/Announcements'
 import Countdown from '@/components/Time'
-import HomePage from '@/components/vantaglobe/HomePage'
 import React from 'react'
+import VantaGlobe from '../components/vantaglobe/VantaGlobe'
 
 export default function page() {
   return (
     <>
-      <HomePage/>
+      <VantaGlobe/>
       <Countdown/>
       <AnimatedGridBackground/>
       <Announcements/>

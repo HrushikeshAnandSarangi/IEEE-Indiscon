@@ -78,38 +78,6 @@ export const AnimatedGridBackground = ({
         transition={{ duration: 20 / animationSpeed, repeat: Infinity, ease: 'linear' }}
       />
 
-      {/* Animated Particles */}
-      <div className="absolute inset-0 opacity-70">
-        {particles.map((particle, i) => (
-          <motion.div
-            key={i}
-            className="absolute h-2 w-2 rounded-full bg-blue-600 shadow-lg"
-            initial={{ left: `${particle.startX}%`, top: `${particle.startY}%`, scale: 0 }}
-            animate={{
-              scale: [0, particle.scale, 0],
-              opacity: [0, 1, 0],
-              x: `${particle.offsetX}%`,
-              y: `${particle.offsetY}%`,
-            }}
-            transition={{ duration: particle.duration / animationSpeed, repeat: Infinity, delay: particle.delay }}
-          />
-        ))}
-      </div>
-
-      {/* Moving Grid Lines */}
-      <motion.div
-        className="absolute inset-0 opacity-95"
-        animate={{ x: ['-5%', '5%', '-5%'], y: ['-5%', '5%', '-5%'] }}
-        transition={{ duration: 30 / animationSpeed, repeat: Infinity, ease: 'linear' }}
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, var(--glow-color) 2px, transparent 1px),
-            linear-gradient(to bottom, var(--glow-color) 2px, transparent 1px)
-          `,
-          backgroundSize: 'calc(var(--grid-size) * 2) calc(var(--grid-size) * 2)',
-          filter: 'brightness(1.8) contrast(2)',
-        }}
-      />
 
       {children}
     </div>
