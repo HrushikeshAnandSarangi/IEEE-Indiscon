@@ -1,37 +1,30 @@
 'use client';
-import { motion } from 'framer-motion';
-import { ReactNode, useEffect, useRef } from 'react';
+import { useEffect, useRef, ReactNode, CSSProperties } from 'react';
 
-type AnimatedGridBackgroundProps = {
-  particleCount?: number;
+interface AnimatedGridBackgroundProps {
   colors?: {
-    grid?: string;
-    particles?: string;
-    glow?: string;
+    grid: string;
+    glow: string;
   };
-  animationSpeed?: number;
   children?: ReactNode;
   className?: string;
-};
+}
 
-export const AnimatedGridBackground = ({
-  particleCount = 150,
+const AnimatedGridBackground: React.FC<AnimatedGridBackgroundProps> = ({
   colors = {
     grid: '#93c5fd',
-    particles: '#3b82f6',
     glow: '#2563eb',
   },
-  animationSpeed = 1,
   children,
   className = '',
-}: AnimatedGridBackgroundProps) => {
-  const containerRef = useRef<HTMLDivElement>(null);
+}) => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const updateGridSize = () => {
       const container = containerRef.current;
-      if (!container) return;
-
+      if (!(container instanceof HTMLDivElement)) return;
+      
       const containerWidth = container.clientWidth;
       const calculatedSize = Math.max(20, Math.min(80, containerWidth / 25));
       container.style.setProperty('--grid-size', `${calculatedSize}px`);
@@ -42,26 +35,16 @@ export const AnimatedGridBackground = ({
     return () => window.removeEventListener('resize', updateGridSize);
   }, []);
 
-  const particles = Array.from({ length: particleCount }, () => ({
-    startX: Math.random() * 100,
-    startY: Math.random() * 100,
-    offsetX: Math.random() * 30 - 15,
-    offsetY: Math.random() * 30 - 15,
-    scale: Math.random() * 2.5 + 0.5,
-    duration: Math.random() * 3 + 2,
-    delay: Math.random() * 2,
-  }));
+  const style: CSSProperties = {
+    '--grid-color': colors.grid,
+    '--glow-color': colors.glow,
+  } as unknown as CSSProperties;
 
   return (
     <div
       ref={containerRef}
       className={`fixed inset-0 w-screen h-full -z-50 overflow-hidden bg-gradient-to-br from-white via-blue-200 to-blue-400 ${className}`}
-      style={{
-        '--grid-color': colors.grid,
-        '--particle-color': colors.particles,
-        '--glow-color': colors.glow,
-        '--animation-speed': animationSpeed,
-      } as React.CSSProperties}
+      style={style}
     >
       <div
         className="absolute inset-0 bg-[length:var(--grid-size)_var(--grid-size)] opacity-90"
@@ -71,15 +54,12 @@ export const AnimatedGridBackground = ({
         }}
       />
 
-      {/* Glow Overlay */}
-      <motion.div
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/50 to-transparent"
-        animate={{ opacity: [0.5, 0.9, 0.5], rotate: 360 }}
-        transition={{ duration: 20 / animationSpeed, repeat: Infinity, ease: 'linear' }}
-      />
-
+      {/* Static Glow Overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/40 to-transparent" />
 
       {children}
     </div>
   );
 };
+
+export default AnimatedGridBackground;

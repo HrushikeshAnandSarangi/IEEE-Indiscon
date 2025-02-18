@@ -1,5 +1,5 @@
 'use client'
-import { AnimatedGridBackground } from '@/components/animatingBackground'
+import  AnimatedGridBackground  from '@/components/animatingBackground'
 import Announcements from '@/components/Announcements'
 import Countdown from '@/components/Time'
 import React from 'react'
