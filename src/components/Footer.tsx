@@ -97,11 +97,11 @@ export default function Footer() {
             <div className="space-y-3">
               <p className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2 text-blue-300" />
-                Nit Rourkela, Rourkela, Odisha, India, 769008
+                NIT ROURKELA, Rourkela, Odisha, India, 769008
               </p>
               <p className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-blue-300" />
-                psingh@nitrkl.ac.in
+                ieeeindiscon2025@gmail.com
               </p>
             </div>
           </motion.div>

@@ -35,24 +35,34 @@ const navigationItems: NavItem[] = [
     href: "/about",
   },
   {
-    title: "Call for Papers",
-    href: "/callforpapers",
+    title: "Authors",
+    href: "#",
+    items: [
+      {
+        title: "Call for Papers",
+        href: "/callforpapers",
+      },
+      {
+        title: "Guidelines",
+        href: "/guidelines",
+      },
+    ],
   },
   {
     title: "Committee",
     href: "/committee",
   },
-  { 
+  {
     title: "Speakers",
-     href: "/speakers" 
+    href: "/speakers",
   },
   {
     title: "Partners",
     href: "/partners",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Travelguide",
+    href: "/map",
   },
 ]
 
@@ -224,7 +234,7 @@ export default function Navbar() {
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               <Image
-                src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1738360522/IEEE/elrgwhx8pgw9t84knafr.png"
+                src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1741845203/kmhdxl64qdpr7vk2kug9.png"
                 alt="Conference Logo"
                 width={64}
                 height={64}
@@ -316,3 +326,4 @@ export default function Navbar() {
     </motion.nav>
   )
 }
+

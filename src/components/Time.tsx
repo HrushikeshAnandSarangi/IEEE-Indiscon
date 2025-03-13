@@ -57,7 +57,7 @@ const Countdown = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-6xl font-bold text-white mb-4 tracking-tight">
-            Countdown to Indiscon 2025
+            INDISCON 2025
           </h2>
           <p className="text-lg md:text-xl text-white/90 mb-12 md:mb-16 font-semibold">
             August 21, 2025

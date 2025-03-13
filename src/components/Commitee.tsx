@@ -27,14 +27,14 @@ const committees: Committee[] = [
         id: 1,
         name: 'Sarah Johnson',
         role: 'Chairperson',
-        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1738839394/IEEE/naiaavgzjlkkhockcsgm.jpg',
+        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1741708401/IEEE/pbzekfhxktoa2xyjxexf.jpg',
         socials: {}
       },
       {
         id: 2,
         name: 'Michael Chen',
         role: 'Event Coordinator',
-        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1738839394/IEEE/naiaavgzjlkkhockcsgm.jpg',
+        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1741708401/IEEE/pbzekfhxktoa2xyjxexf.jpg',
         socials: {
         }
       }
@@ -47,7 +47,7 @@ const committees: Committee[] = [
         id: 3,
         name: 'Emma Wilson',
         role: 'Lead Developer',
-        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1738839394/IEEE/naiaavgzjlkkhockcsgm.jpg',
+        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1741708401/IEEE/pbzekfhxktoa2xyjxexf.jpg',
         socials: {
         }
       },
@@ -55,7 +55,7 @@ const committees: Committee[] = [
         id: 4,
         name: 'David Kim',
         role: 'Systems Architect',
-        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1738839394/IEEE/naiaavgzjlkkhockcsgm.jpg',
+        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1741708401/IEEE/pbzekfhxktoa2xyjxexf.jpg',
         socials: {
         }
       }

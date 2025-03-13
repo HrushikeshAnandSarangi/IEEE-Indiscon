@@ -13,9 +13,9 @@ interface Section {
 const AboutUs: FC = () => {
   const sections: Section[] = [
     {
-      title: "About IEEE Indiscon",
+      title: "About IEEE INDISCON",
       content:
-        "IEEE INDISCON-2025 is the 6th edition of the international conference series INDISCON to be organized by the National Institute of Technology Rourkela. INDISCON-2025 is technically sponsored by the IEEE Rourkela Subsection. The 6th edition of INDISCON, i.e., INDISCON-2025 is envisioned to provide a larger platform for researchers from academia and industry not only to share their research but also networking opportunities among the peers for collaborations. The conference aims to foster the theme through keynotes, invited talks, and industry exhibits and oral presentation of research articles in the most relevant areas allied to the theme. The conference will also exhibit Graduate Research Forum to encourage budding young researchers to showcase their innovative research in aforementioned domains.",
+        `The theme of IEEE INDISCON 2025 is Smart and Sustainable Technologies for Society. The theme focuses on the integration of innovative technological solutions aimed at addressing global challenges while promoting environmental, economic, and social sustainability. It emphasizes the development and implementation of intelligent systems, such as IoT, AI, and smart grids, that optimize resource usage, reduce waste, and improve efficiency across various sectors like energy, transportation, healthcare, and agriculture. These technologies are designed not only to enhance quality of life but also to contribute to a more sustainable future by fostering green energy solutions, reducing carbon footprints, and ensuring equitable access to essential services. Ultimately, this theme explores the intersection of cutting-edge innovation with long-term societal well-being. IEEE INDISCON 2025 will be held at NIT Rourkela, Odisha, India. The theme of the conference will foster an environment for deliberating on different research aspects on the said topic.`,
       image:
         "https://res.cloudinary.com/dk6m1qejk/image/upload/v1738839394/IEEE/naiaavgzjlkkhockcsgm.jpg",
     },
@@ -27,7 +27,7 @@ const AboutUs: FC = () => {
         "https://res.cloudinary.com/dk6m1qejk/image/upload/v1738839394/IEEE/naiaavgzjlkkhockcsgm.jpg",
     },
     {
-      title: "About Nit Rourkela",
+      title: "About NIT ROURKELA",
       content:
         `National Institute of Technology (NIT), Rourkela was founded as Regional Engineering College, Rourkela in 1961. It is a prestigious Institute with a reputation for excellence at both undergraduate and postgraduate levels, fostering the spirit of national integration among the students, a close interaction with industry and a strong emphasis on research, both basic and applied.
 For more details visit www.nitrkl.ac.in`,
@@ -37,14 +37,14 @@ For more details visit www.nitrkl.ac.in`,
     {
       title: "About IEEE India Council",
       content:
-        "IEEE is the worlds largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. IEEE and its members inspire a global community through IEEE highly cited publications, conferences, technology standards, and professional and educational activities. IEEE India Council is the umbrella organisation which coordinates IEEE activities in India. Its primary aim is to assist and coordinate the activities of local Sections, in order to benefit mutually, and avoid duplication of effort and resources. IEEE India Council was established on 20th May 1976 and is one of the five councils in the Asia Pacific Region (Region #10 of IEEE).For more details visit: https://ieeeindiacouncil.org/",
+        "IEEE is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. IEEE and its members inspire a global community through IEEE highly cited publications, conferences, technology standards, and professional and educational activities. IEEE India Council is the umbrella organisation which coordinates IEEE activities in India. Its primary aim is to assist and coordinate the activities of local Sections, in order to benefit mutually, and avoid duplication of effort and resources. IEEE India Council was established on 20th May 1976 and is one of the five councils in the Asia Pacific Region (Region #10 of IEEE).For more details visit: https://ieeeindiacouncil.org/",
       image:
         "https://res.cloudinary.com/dk6m1qejk/image/upload/v1738839394/IEEE/naiaavgzjlkkhockcsgm.jpg",
     },
     {
       title: "About IEEE Rourkela Subsection",
       content:
-        "IEEE Rourkela Subsection has established on 10th December 2020, under the umbrella of IEEE India Council with GEO code R0013703. Its aim is to promote the technical, scholastic and student events such as seminars, conferences, exhibitions, workshops, short-term courses, etc. in its geographic leadership.",
+        "IEEE Rourkela Subsection was established on 10th December 2020, under the umbrella of IEEE India Council with GEO code R0013703. Its aim is to promote the technical, scholastic and student events such as seminars, conferences, exhibitions, workshops, short-term courses, etc. in its geographic leadership.",
       image:
         "https://res.cloudinary.com/dk6m1qejk/image/upload/v1738839394/IEEE/naiaavgzjlkkhockcsgm.jpg",
     },
@@ -68,7 +68,7 @@ For more details visit www.nitrkl.ac.in`,
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        About Indiscon 2025
+        About INDISCON 2025
       </motion.h2>
 
       <div className="max-w-6xl mx-auto space-y-24">
@@ -103,7 +103,7 @@ For more details visit www.nitrkl.ac.in`,
               <h3 className="text-3xl md:text-3xl font-bold text-gray-900 mb-4">
                 {section.title}
               </h3>
-              <p className="text-slate-900 font-semibold leading-relaxed">
+              <p className="text-slate-900 font-semibold leading-relaxed text-justify">
                 {section.content}
               </p>
             </div>

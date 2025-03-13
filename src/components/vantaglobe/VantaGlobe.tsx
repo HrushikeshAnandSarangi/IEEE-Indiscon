@@ -12,8 +12,6 @@ const VantaGlobe: React.FC = () => {
   const theta = useRef<number>(0);
   const radius = useRef<number>(5);
   const phi = useRef<number>(Math.PI / 4);
-
-  // Scroll tracking using framer-motion
   const { scrollYProgress } = useScroll();
   const zoomValue = useTransform(scrollYProgress, [0, 1], [3, 10]);
 
@@ -69,23 +67,20 @@ const VantaGlobe: React.FC = () => {
     };
   }, []);
 
-  // Update zoom level on scroll
   useEffect(() => {
     return zoomValue.onChange((newRadius) => {
       radius.current = newRadius;
     });
   }, [zoomValue]);
-
-  // Mouse movement handling
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     const { clientX, clientY, currentTarget } = event;
     const { width, height } = currentTarget.getBoundingClientRect();
 
-    const x = (clientX / width - 0.5) * 2; // Normalize to [-1, 1]
+    const x = (clientX / width - 0.5) * 2;
     const y = (clientY / height - 0.5) * 2;
 
-    theta.current = x * Math.PI; // Rotate horizontally
-    phi.current = y * Math.PI / 4; // Rotate vertically with limit
+    theta.current = x * Math.PI; 
+    phi.current = y * Math.PI / 4;
   };
 
   return (
@@ -98,9 +93,9 @@ const VantaGlobe: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-4">IEEE Indiscon 2025</h1>
-        <p className="text-lg md:text-xl mb-6 max-w-2xl  text-white font-semibold">
-        IEEE INDISCON-2025, the 6th edition of the international conference series, will be hosted by NIT Rourkela with IEEE Rourkela Subsection &aposs; technical sponsorship. It aims to provide a platform for researchers to share work, network, and collaborate through keynotes, talks, exhibits, and a Graduate Research Forum.
+        <h1 className="text-4xl md:text-6xl font-extrabold mb-4">IEEE INDISCON 2025</h1>
+        <p className=" md:text-xl mb-6 max-w-2xl  text-white font-semibold text-justify"> 
+        IEEE INDISCON-2025 is the flagship conference of the IEEE India Council. It will be the 6th edition of INDISCON and will be held at NIT Rourkela under the aegis of IEEE Rourkela Subsection. The conference is envisioned to provide a big platform for researchers from academia and industry not only to share their research, but also provide networking opportunities among the peers for collaborations. The conference aims to foster the theme through keynotes, invited talks, and industry exhibits and oral presentation of research articles in the most relevant areas allied to the theme. The conference will also exhibit Graduate Research Forum to encourage budding young researchers to showcase their innovative research in aforementioned domains.
         </p>
         <motion.a
           href="/about"

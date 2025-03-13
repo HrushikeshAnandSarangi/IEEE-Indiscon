@@ -54,11 +54,9 @@ export default function Announcements() {
             ))}
           </ul>
         </AnimatedSection>
-
-        {/* Other Sections - 3 Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="space-y-6">
-            <AnimatedSection className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow h-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+          <div className="space-y-6 overflow-y-auto h-[150vh] bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+            <AnimatedSection className=" p-6 rounded-2xl hover:shadow-xl transition-shadow h-full">
               <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
                 Conference Leadership
               </h2>
@@ -70,8 +68,8 @@ export default function Announcements() {
                   </h3>
                   <ul className="space-y-3 pl-5">
                     {[
-                      "Prof.Umamaheshwar Rao Karanam, Director, NIT Rourkela",
-                      "Prod. Debabrata Das, Chair, IEEE India Council",
+                      "Prof.  Umamaheshwar Rao Karanam, Director, NIT Rourkela, India",
+                      "Prof. Prerna Gaur, Chair, IEEE India Council",
                     ].map((name, index) => (
                       <motion.li
                         key={index}
@@ -92,91 +90,7 @@ export default function Announcements() {
                     Co-Patrons:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Suparna Kar Chowdhary","Prof. Dipankar Debnath","Mr. Hare Krishna Ratha","Prof. S. M. Sameer"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
-                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
-                    General Chairs:
-                  </h3>
-                  <ul className="space-y-3 pl-5">
-                    {["Prof. Poonam Singh","Prof. Susmita Das","Dr.Puneet Mishra"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
-                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
-                    TPC Chairs:
-                  </h3>
-                  <ul className="space-y-3 pl-5">
-                    {["Prof. D P Acharya","Prof. A K Turuk","Prof. Preetam Kumar","Prof. Neel Kanth Kundu","Prof. Prasanna Kumar Sahu","Prof. Samit Ari","Prof. P. K. Ray","Prof. Manish Okade"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
-                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
-                    Organising Secretary:
-                  </h3>
-                  <ul className="space-y-3 pl-5">
-                    {["Prof. S. M. Hiremath","Prof. A. K. Swain","Prof. Arnab Ghosh","Prof. T. Roy Choudhury"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
-                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
-                    Finance Chairs:
-                  </h3>
-                  <ul className="space-y-3 pl-5">
-                    {["Prof. Arun Kumar","Prof. Sandip Ghosal"].map(
+                    {["Prof. Suparna Kar Chowdhury","Prof. Dipankar Debnath","Prof. Subhranshu Samantray","Prof. S. M. Sameer"].map(
                       (name, index) => (
                         <motion.li
                           key={index}
@@ -197,7 +111,175 @@ export default function Announcements() {
                     Executive Steering Committee:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Sh. Deepak Mathur","Prof. Prerna Gaur","Dr. Suresh Nair","Prof. K. V. S. Hari","Prof. Ashutosh Dutta","Prof. Celia Shahnaz"].map(
+                    {["Mr. Deepak Mathur","Prof. Suresh Nair","Prof. Debabrata Das","Prof. K. V. S. Hari","Prof. Ashutosh Dutta","Prof. Celia Shahnaz"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    International Advisory Committee:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Sajal Das","Prof. Amit Mishra","Prof. Ranga Rao Venkatesha Prasad","Prof. Akshay Rathore ","Prof. Aryan Kaushik"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div >
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    National Advisory Committee:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Ganpati Panda","Prof. Pradipta Kumar Nanda","Prof. Iti Saha Misra","Prof. Bansidhar Majhi","Er. Hare Krushna Rath","Prof. Anup Kumar Panda","Prof. Kamalakanta. Mahapatra","Prof.  Dipti Patra","Prof.  Kanungo Barada Mohanty","Prof.  Bibhudatta Sahoo","Prof. Sukadev Meher","Prof. Durga Prasad Mohapatra","Prof. Debiprasad Priyabrata Acharya ","Prof. Prasanna Kumar Sahu"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    Honorary Chair:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Saswat Chakrabarti","Prof. Bhaskar Gupta","Prof. Sarat Kumar Patra","Prof. Bidyadhar Subudhi","Prof. Sukumar Mishra","Prof. Bijaya Ketan Panigrahi"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    General Chairs:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Poonam Singh","Prof. Susmita Das","Prof. Sudip Misra"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    TPC Chairs:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Ashok Kumar Turuk","Prof. Pravat Kumar Ray","Prof. Preetam Kumar","Prof. Mrinal Kanti Mandal"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    TPC Vice-Chairs:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Ajit Kumar Sahoo","Dr. Supratim Gupta ","Dr. Ratnakar Dash","Dr. Mahesh Mohan M R"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    Organizing Secretary:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Ayaskanta Swain","Dr. Shrishail Hiremath","Dr. Arnab Ghosh","Dr. Tanmoy Roy Choudhury","Mr. Nandan S"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    Co-Organizing Secretary:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Suman Kumar Dey","Prof. Sudip Kundu","Prof. Sandip Ghoshal","Prof. Pankaj Sharma"].map(
                       (name, index) => (
                         <motion.li
                           key={index}
@@ -216,13 +298,13 @@ export default function Announcements() {
             </AnimatedSection>
           </div>
 
-          <div className="space-y-6">
-            <AnimatedSection className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow h-full">
+          <div className="space-y-6 overflow-y-auto h-[150vh] bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+            <AnimatedSection className=" p-6 rounded-2xl  ">
               <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
                 Conference Tracks
               </h2>
               <p className="text-gray-600">
-                Topics covered by Indiscon 2025 include, but are not limited to:
+                Topics covered by INDISCON 2025 include, but are not limited to:
               </p>
               <ul className="space-y-4">
                 {[
