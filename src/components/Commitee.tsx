@@ -1,120 +1,112 @@
-import React from 'react';
-import Image from 'next/image';
-import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
-
-type Member = {
-  id: number;
-  name: string;
-  role: string;
-  imageUrl: string;
-  socials: {
-    twitter?: string;
-    linkedin?: string;
-    github?: string;
-  };
-};
-
-type Committee = {
-  title: string;
-  members: Member[];
-};
-
-const committees: Committee[] = [
-  {
-    title: 'Organizing Committee',
-    members: [
-      {
-        id: 1,
-        name: 'Sarah Johnson',
-        role: 'Chairperson',
-        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1741708401/IEEE/pbzekfhxktoa2xyjxexf.jpg',
-        socials: {}
-      },
-      {
-        id: 2,
-        name: 'Michael Chen',
-        role: 'Event Coordinator',
-        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1741708401/IEEE/pbzekfhxktoa2xyjxexf.jpg',
-        socials: {
-        }
-      }
-    ]
-  },
-  {
-    title: 'Technical Committee',
-    members: [
-      {
-        id: 3,
-        name: 'Emma Wilson',
-        role: 'Lead Developer',
-        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1741708401/IEEE/pbzekfhxktoa2xyjxexf.jpg',
-        socials: {
-        }
-      },
-      {
-        id: 4,
-        name: 'David Kim',
-        role: 'Systems Architect',
-        imageUrl: 'https://res.cloudinary.com/dk6m1qejk/image/upload/v1741708401/IEEE/pbzekfhxktoa2xyjxexf.jpg',
-        socials: {
-        }
-      }
-    ]
-  }
-];
+"use client"
+import Image from "next/image"
+import { patronCommittees, otherCommittees } from "./data"
 
 export default function Committee() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen py-20">
+    <section className="min-h-screen py-20 flex flex-col items-center justify-center">
       <div className="container mx-auto px-4 lg:px-8 text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-gray-900">
-          Our Committees
-        </h2>
-        {committees.map((committee) => (
-          <div key={committee.title} className="mb-16 w-full flex flex-col items-center">
-            <h3 className="text-3xl font-bold mb-8 text-gray-800 border-b-4 border-blue-500 pb-2">
-              {committee.title}
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-              {committee.members.map((member) => (
-                <div 
-                  key={member.id} 
-                  className="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center w-80 h-[250px] justify-between"
-                >
-                  <div className="relative w-32 h-32 mb-4">
-                    <Image
-                      src={member.imageUrl}
-                      alt={member.name}
-                      width={128}
-                      height={128}
-                      className="rounded-full object-cover border-4 border-gray-200"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h4 className="text-2xl font-bold mb-2 text-gray-800">{member.name}</h4>
-                    <p className="text-gray-600 mb-4 font-medium">{member.role}</p>
-                    <div className="flex justify-center space-x-4">
-                      {Object.entries(member.socials).map(([platform, url]) => (
-                        <a
-                          key={platform}
-                          href={url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition-colors duration-200"
-                        >
-                          {platform === 'twitter' && <FaTwitter className="text-blue-500 w-6 h-6" />}
-                          {platform === 'linkedin' && <FaLinkedin className="text-blue-700 w-6 h-6" />}
-                          {platform === 'github' && <FaGithub className="text-gray-800 w-6 h-6" />}
-                        </a>
-                      ))}
+        {/* Header */}
+        <div className="mb-16 animate-fadeIn" style={{ animation: "fadeIn 0.5s ease-out" }}>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">
+            Our <span className="text-blue-600">Committees</span>
+          </h2>
+          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Meet the distinguished leaders guiding our IEEE initiatives and activities
+          </p>
+        </div>
+
+        {/* Patrons Section */}
+        <div className="mb-24 flex flex-col items-center">
+          {patronCommittees.map((committee, ) => (
+            <div key={committee.title} className="mb-16 animate-fadeUp w-full flex flex-col items-center">
+              <h3 className="text-3xl font-bold mb-3 text-blue-700">{committee.title}</h3>
+              <div className="h-1 w-32 mb-6 bg-blue-700"></div>
+
+              <div className="flex flex-wrap justify-center gap-8 w-full max-w-4xl">
+                {committee.members.map((member) => (
+                  <div key={member.id} className="transition-transform duration-300 hover:-translate-y-2 flex justify-center w-80">
+                    <div className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white border border-gray-200 w-80 h-[320px] flex flex-col items-center">
+                      <div className="flex flex-col items-center p-6 h-full justify-between">
+                        <div className="relative w-40 h-40">
+                          <Image
+                            src={member.imageUrl || "/placeholder.svg"}
+                            alt={member.name}
+                            width={160}
+                            height={160}
+                            className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
+                          />
+                          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                            Patron
+                          </div>
+                        </div>
+                        <div className="text-center">
+                          <h4 className="font-bold mb-2 text-gray-800 text-2xl">{member.name}</h4>
+                          <p className="text-gray-600 font-medium">{member.role}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* Other Committees Section */}
+        <div className="mb-24 flex flex-col items-center">
+          {otherCommittees.map((committee, ) => (
+            <div key={committee.title} className="mb-16 animate-fadeUp w-full flex flex-col items-center">
+              <h3 className="text-3xl font-bold mb-3 text-blue-700">{committee.title}</h3>
+              <div className="h-1 w-32 mb-6 bg-blue-700"></div>
+
+              <div className="flex flex-wrap justify-center gap-8 w-full max-w-4xl">
+                {committee.members.map((member) => (
+                  <div key={member.id} className="transition-transform duration-300 hover:-translate-y-2 flex justify-center w-80">
+                    <div className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white border border-gray-200 w-80 h-[320px] flex flex-col items-center">
+                      <div className="flex flex-col items-center p-6 h-full justify-between">
+                        <div className="relative w-40 h-40">
+                          <Image
+                            src={member.imageUrl || "/placeholder.svg"}
+                            alt={member.name}
+                            width={160}
+                            height={160}
+                            className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
+                          />
+                        </div>
+                        <div className="text-center">
+                          <h4 className="font-bold mb-2 text-gray-800 text-2xl">{member.name}</h4>
+                          <p className="text-gray-600 font-medium">{member.role}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
+
+      {/* CSS Animations */}
+      <style jsx global>{`
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        
+        @keyframes fadeUp {
+          from { 
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to { 
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </section>
-  );
+  )
 }
