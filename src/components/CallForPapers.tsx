@@ -5,10 +5,10 @@ import { useEffect, useRef } from "react"
 
 const CallForPapers: React.FC = () => {
   const tracks = [
-    "Track 1: Artificial Intelligence and Machine Learning, Data Science",
+    "Track 1: AI & ML, Data Science",
     "Track 2: Sensors, Instrumentation, Control and Automation",
-    "Track 3: Network and Hardware Security, Cryptography, and Block Chain Technology",
-    "Track 4: Neuromorphic, Quantum Computing, Parallel and Distributed Computing",
+    "Track 3: Network and Hardware Security, Cryptography, and Block chain Technology",
+    "Track 4: Neuromorphic, Quantum Computing, Parallel and Distributed computing and Sustainable Computing",
     "Track 5: Optical/RF/Microwave/Radar/Terahertz Technologies",
     "Track 6: VLSI and Embedded Systems, Semiconductor Devices, Circuits, MEMS",
     "Track 7: Robotics, UAV, and Autonomous Vehicle",
@@ -16,18 +16,16 @@ const CallForPapers: React.FC = () => {
     "Track 9: Next Generation Communication Technologies and Networks",
     "Track 10: Power Electronics and Power Systems",
     "Track 11: Electric Vehicles, Sustainable Technologies",
-    "Track 12: IoT, Cyber Physical Systems, and Industry 4.0",
+    "Track 12: IoT, Cyber Physical Systems, and Industry4.0",
   ]
 
   const importantDates = [
-    { event: "Paper Submission Deadline", date: "January 15, 2025" },
-    { event: "Notification of Acceptance", date: "March 1, 2025" },
-    { event: "Camera-Ready Paper Submission", date: "April 15, 2025" },
-    { event: "Early Bird Registration", date: "May 1, 2025" },
-    { event: "Conference Dates", date: "June 10-12, 2025" },
-    { event: "Workshop Proposals", date: "December 10, 2024" },
-    { event: "Tutorial Proposals", date: "December 20, 2024" },
-    { event: "Registration Opens", date: "March 15, 2025" },
+    { event: "Paper Submission Starts:", date: "01-12-2024" },
+    { event: "Paper Submission Ends:", date: "30-04-2025" },
+    { event: "Notification of Acceptance:", date: "31-05-2025" },
+    { event: "Camera-ready Submission:", date: "20-06-2025" },
+    { event: "Proposal Submission Deadline:", date: "20-03-25" },
+    { event: "Notification of Acceptance/Rejection(special paper):", date: "25-03-25" },
   ]
 
   // Create refs for the slider animation

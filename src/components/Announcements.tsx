@@ -36,10 +36,7 @@ export default function Announcements() {
           </h2>
           <ul className="space-y-4">
             {[
-              "Announcement 1: Call for Papers",
-              "Announcement 2: Registration Open",
-              "Announcement 3: Keynote Speakers",
-              "Announcement 4: Workshop Schedule",
+              "Paper Submission Starts",
             ].map((announcement, index) => (
               <motion.li
                 key={index}
@@ -308,18 +305,18 @@ export default function Announcements() {
               </p>
               <ul className="space-y-4">
                 {[
-                  "Track 1: Artificial Intelligence and Machine Learning, Data Science",
-                  "Track 2: Sensors, Instrumentation, Control and Automation",
-                  "Track 3: Network and Hardware Security, Cryptography, and Block Chain Technology",
-                  "Track 4: Neuromorphic, Quantum Computing, Parallel and Distributed Computing",  
-                  "Track 5: Optical/RF/Microwave/Radar/Terahertz Technologies",
-                  "Track 6: VLSI and Embedded Systems,Semiconductor Devices, Circuits, MEMS",
-                  "Track 7: Robotics, UAV, and Autonomous Vehicle",
-                  "Track 8: Signal, Image and Multimedia Processing, Digital Healthcare",
-                  "Track 9: Next Generation Communication Technologies and Networks",
-                  "Track 10: Power Electronics and Power Systems",
-                  "Track 11: Electric Vehicles, Sustainable Technologies",
-                  "Track 12: IoT, Cyber Physical Systems, and Industry 4.0",
+                    "Track 1: AI & ML, Data Science",
+                    "Track 2: Sensors, Instrumentation, Control and Automation",
+                    "Track 3: Network and Hardware Security, Cryptography, and Block chain Technology",
+                    "Track 4: Neuromorphic, Quantum Computing, Parallel and Distributed computing and Sustainable Computing",
+                    "Track 5: Optical/RF/Microwave/Radar/Terahertz Technologies",
+                    "Track 6: VLSI and Embedded Systems, Semiconductor Devices, Circuits, MEMS",
+                    "Track 7: Robotics, UAV, and Autonomous Vehicle",
+                    "Track 8: Signal, Image and Multimedia Processing, Digital Healthcare",
+                    "Track 9: Next Generation Communication Technologies and Networks",
+                    "Track 10: Power Electronics and Power Systems",
+                    "Track 11: Electric Vehicles, Sustainable Technologies",
+                    "Track 12: IoT, Cyber Physical Systems, and Industry4.0",
                 ].map((track, index) => (
                   <motion.li
                     key={index}
@@ -345,16 +342,16 @@ export default function Announcements() {
                 <table className="w-full">
                   <tbody className="divide-y divide-gray-200">
                     {[
-                      ["Paper Submission Starts", "19-05-2025"],
+                      ["Paper Submission Starts:", "01-12-2024"],
                       [
-                        "Extended hard deadline: 01-08-2025",
-                        "19-08-2024",
+                        "Paper Submission Ends:",
+                        "30-04-2025",
                         
                       ],
-                      ["Notification of Acceptance", "10-05-2025"],
-                      ["Final Paper Submission", "05-11-2025"],
-                      ["Author Registration", "25-10-2025"],
-                      ["Early-Bird Registration Ends", "19-08-2025"],
+                      ["Notification of Acceptance:", "31-05-2025"],
+                      ["Camera-ready Submission:", "20-06-2025"],
+                      ["Proposal Submission Deadline:", "20-03-25"],
+                      ["Notification of Acceptance/Rejection(special paper):", "25-03-25"],
                     ].map(([event, date, extended], index) => (
                       <motion.tr
                         key={index}
