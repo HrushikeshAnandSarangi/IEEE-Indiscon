@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import * as THREE from 'three';
+import Link from 'next/link';
 interface VantaEffect {
   destroy: () => void;
   camera?: THREE.PerspectiveCamera;
@@ -97,14 +98,20 @@ const VantaGlobe: React.FC = () => {
         <p className=" md:text-xl mb-6 max-w-2xl  text-white font-semibold text-justify"> 
         IEEE INDISCON-2025 is the flagship conference of the IEEE India Council. It will be the 6th edition of INDISCON and will be held at NIT Rourkela under the aegis of IEEE Rourkela Subsection. The conference is envisioned to provide a big platform for researchers from academia and industry not only to share their research, but also provide networking opportunities among the peers for collaborations. The conference aims to foster the theme through keynotes, invited talks, and industry exhibits and oral presentation of research articles in the most relevant areas allied to the theme. The conference will also exhibit Graduate Research Forum to encourage budding young researchers to showcase their innovative research in aforementioned domains.
         </p>
-        <motion.a
-          href="/about"
-          className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Learn More
-        </motion.a>
+          <motion.div
+            suppressHydrationWarning
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Link href="/about" passHref>
+              <motion.button
+                className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition"
+                suppressHydrationWarning
+              >
+                Learn More
+              </motion.button>
+            </Link>
+          </motion.div>
       </motion.div>
     </div>
   );

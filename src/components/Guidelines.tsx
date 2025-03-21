@@ -38,7 +38,7 @@ export default function PaperSubmissionGuidelines() {
       <div className="mb-8">
         {activeTab === "paper" ? (
           <Image
-            src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1741770571/IEEE/rj7opdxgp33bmbigosww.png"
+            src="/Callforpapers.png"
             alt="INDISCON 2025 Conference Call for Papers"
             width={1000}
             height={1200}
@@ -46,7 +46,7 @@ export default function PaperSubmissionGuidelines() {
           />
         ) : (
           <Image
-            src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1741770487/IEEE/cd5bacpbuz6r8botpswd.png"
+            src="/CallforSpecialPapers.png"
             alt="INDISCON 2025 Special Session Proposal"
             width={1000}
             height={300}

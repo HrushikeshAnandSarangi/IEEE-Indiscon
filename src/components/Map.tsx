@@ -393,7 +393,7 @@ export default function TravelGuideToNITRourkela() {
           <div className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-transform hover:scale-[1.02]">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1741768700/IEEE/kixgqcwwq7t2z7pmct1q.jpg"
+                src="/HanumanVatika.jpg"
                 alt="Hanuman Vatika"
                 width={400}
                 height={200}
@@ -420,7 +420,7 @@ export default function TravelGuideToNITRourkela() {
           <div className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-transform hover:scale-[1.02]">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1741768538/IEEE/sml0tzedmq0cdnufy2d8.jpg"
+                src="/vedvyaas.png"
                 alt="Vedvyas Temple"
                 width={400}
                 height={200}
@@ -447,7 +447,7 @@ export default function TravelGuideToNITRourkela() {
           <div className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-transform hover:scale-[1.02]">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1741768835/IEEE/yesoexvgqvg7szkdodci.jpg"
+                src="/mandiraDam.jpg"
                 alt="Mandira Dam"
                 width={400}
                 height={200}
@@ -474,7 +474,7 @@ export default function TravelGuideToNITRourkela() {
           <div className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-transform hover:scale-[1.02]">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1741769293/IEEE/livr2zwno0bejdgldsca.jpg"
+                src="/PitamahalDam.JPG"
                 alt="Pitamahal Dam"
                 width={400}
                 height={200}
@@ -500,7 +500,7 @@ export default function TravelGuideToNITRourkela() {
           <div className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-transform hover:scale-[1.02]">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1741768963/IEEE/aubujmtt8tszdyfqhwqt.jpg"
+                src="/RourkelaSteelPlant.jpg"
                 alt="Rourkela Steel Plant"
                 width={400}
                 height={200}
@@ -526,7 +526,7 @@ export default function TravelGuideToNITRourkela() {
           <div className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-transform hover:scale-[1.02]">
             <div className="h-48 overflow-hidden relative">
               <Image
-                src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1741769103/IEEE/dd5afdk23dr6h9i2hpyc.jpg"
+                src="/IndiraGandhiPark.png"
                 alt="Indira Gandhi Park"
                 width={400}
                 height={200}

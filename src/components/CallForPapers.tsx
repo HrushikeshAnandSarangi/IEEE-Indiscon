@@ -2,6 +2,8 @@
 
 import type React from "react"
 import { useEffect, useRef } from "react"
+import Link from "next/link"
+import { motion } from "framer-motion"
 
 const CallForPapers: React.FC = () => {
   const tracks = [
@@ -127,14 +129,16 @@ const CallForPapers: React.FC = () => {
             today.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            <a
-              href="/guidelines"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-800 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-black hover:text-white transition duration-300 transform hover:scale-105 shadow-lg"
-            >
-              Guidelines
-            </a>
+            <motion.div whileHover={{ scale: 1.05 }} suppressHydrationWarning>
+              <Link href="/guidelines" passHref>
+                <motion.button
+                  rel="noopener noreferrer"
+                  className="bg-blue-800 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-black hover:text-white transition duration-300 transform shadow-lg"
+                >
+                  Guidelines
+                </motion.button>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
