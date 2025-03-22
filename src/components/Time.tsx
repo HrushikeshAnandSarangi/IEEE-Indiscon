@@ -10,7 +10,6 @@ const CountdownBox = ({ value, label }: { value: number; label: string }) => (
       {label}
     </span>
     
-    {/* Glow effect */}
     <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
       <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-xl" />
       <div className="absolute -inset-[2px] bg-gradient-to-br from-blue-300/30 to-transparent rounded-xl blur-[12px]" />
@@ -19,10 +18,18 @@ const CountdownBox = ({ value, label }: { value: number; label: string }) => (
 );
 
 const Countdown = () => {
-  const eventDate = "2025-8-20 23:59:59";
+  const parseEventDate = () => {
+    const dateString = "2025-8-20 23:59:59";
+    const [datePart, timePart] = dateString.split(' ');
+    const [year, month, day] = datePart.split('-').map(Number);
+    const [hours, minutes, seconds] = timePart.split(':').map(Number);
+    
+    // Months are 0-indexed in JavaScript Date (August is 7)
+    return new Date(year, month - 1, day, hours, minutes, seconds);
+  };
 
   const calculateTimeLeft = () => {
-    const eventTime = new Date(eventDate).getTime();
+    const eventTime = parseEventDate().getTime();
     const currentTime = new Date().getTime();
     const difference = eventTime - currentTime;
 
