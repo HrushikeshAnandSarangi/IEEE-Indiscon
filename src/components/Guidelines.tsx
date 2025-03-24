@@ -33,8 +33,6 @@ export default function PaperSubmissionGuidelines() {
           Special Session Proposal
         </button>
       </div>
-
-      {/* Header with logos - changes based on active tab */}
       <div className="mb-8">
         {activeTab === "paper" ? (
           <Image
@@ -54,8 +52,6 @@ export default function PaperSubmissionGuidelines() {
           />
         )}
       </div>
-
-      {/* Paper Submission Guidelines */}
       {activeTab === "paper" && (
         <div className="space-y-6">
           <div className="bg-blue-50 p-6 rounded-lg shadow-sm">

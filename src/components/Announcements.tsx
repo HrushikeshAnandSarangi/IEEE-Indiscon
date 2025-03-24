@@ -351,7 +351,8 @@ export default function Announcements() {
                       ["Notification of Acceptance:", "31-05-2025"],
                       ["Camera-ready Submission:", "20-06-2025"],
                       ["Proposal Submission Deadline:", "20-03-25"],
-                      ["Notification of Acceptance/Rejection(special paper):", "25-03-25"],
+                      ["Special Proposal extended submission date:","31.03.2025"],
+                      ["Notification of Acceptance/Rejection(special Proposal):", "05.04.2025"],
                     ].map(([event, date, extended], index) => (
                       <motion.tr
                         key={index}

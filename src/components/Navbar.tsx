@@ -36,15 +36,15 @@ const navigationItems: NavItem[] = [
   },
   {
     title: "Authors",
-    href: "#",
+    href: "/guidelines",
     items: [
       {
         title: "Call for Papers",
-        href: "/callforpapers",
+        href: "/guidelines",
       },
       {
-        title: "Guidelines",
-        href: "/guidelines",
+        title: "Special Proposals",
+        href: "/callforpapers",
       },
     ],
   },
