@@ -73,7 +73,7 @@ export type Member = {
         },
         {
           id: 8,
-          name: "Dr. Suresh Nair",
+          name: "Prof. Suresh Nair",
           role: "Founder and Managing Director, Amara Raja Design Alpha",
           imageUrl: "/defaultprofile.jpg",
         },
@@ -330,17 +330,17 @@ export type Member = {
                 imageUrl:"/defaultprofile.jpg"
             },{
                 id:46,
-                name:"Dr. Supratim Gupta ",
+                name:"Prof. Supratim Gupta ",
                 role:"EE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             },{
                 id:47,
-                name:"Dr. Ratnakar Dash",
+                name:"Prof. Ratnakar Dash",
                 role:"CSE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             },{
                 id:48,
-                name:"Dr. Mahesh Mohan M R",
+                name:"Prof. Mahesh Mohan M R",
                 role:"AI Department, IIT Kharagpur",
                 imageUrl:"/defaultprofile.jpg"
             }
@@ -351,25 +351,25 @@ export type Member = {
         members:[
             {
                 id:49,
-                name:"Dr. Ayaskanta Swain",
+                name:"Prof. Ayaskanta Swain",
                 role:"ECE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             },
             {
                 id:50,
-                name:"Dr. Shrishail Hiremath",
+                name:"Prof. Shrishail Hiremath",
                 role:"ECE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             },
             {
                 id:51,
-                name:"Dr. Arnab Ghosh",
+                name:"Prof. Arnab Ghosh",
                 role:" EE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             },
             {
                 id:52,
-                name:"Dr. Tanmoy Roy Choudhury",
+                name:"Prof. Tanmoy Roy Choudhury",
                 role:"EE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             },
@@ -386,25 +386,25 @@ export type Member = {
         members:[
             {
                 id:54,
-                name:"Dr. Suman Kumar Dey",
+                name:"Prof. Suman Kumar Dey",
                 role:"EE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             },
             {
                 id:55,
-                name:"Dr. Sudip Kundu",
+                name:"Prof. Sudip Kundu",
                 role:"ECE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             },
             {
                 id:56,
-                name:"Dr. Sandip Ghoshal",
+                name:"Prof. Sandip Ghoshal",
                 role:"ECE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             },
             {
                 id:57,
-                name:"Dr. Pankaj Sharma",
+                name:"Prof. Pankaj Sharma",
                 role:"ECE Department, NIT Rourkela",
                 imageUrl:"/defaultprofile.jpg"
             }
