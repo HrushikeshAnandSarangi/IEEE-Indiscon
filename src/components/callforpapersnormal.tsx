@@ -7,7 +7,7 @@ export default function PaperSubmission() {
     <>
       <div className="mb-6 sm:mb-8 w-[80%] mx-auto">
         <Image
-          src="/Callforpapers.png"
+          src="/CallForPaper2.png"
           alt="INDISCON 2025 Conference Call for Papers"
           width={1000}
           height={1200}

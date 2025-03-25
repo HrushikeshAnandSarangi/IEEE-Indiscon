@@ -330,8 +330,7 @@ export default function TravelGuideToNITRourkela() {
                   <h4 className="font-medium text-gray-800 mb-1">Campus Entry Information</h4>
                   <p className="text-sm text-gray-700">
                     NIT Rourkela has security checkpoints at all entrances. Visitors need to provide identification and
-                    purpose of visit. For new students arriving during admission, special help desks are usually set up
-                    at the main gate.
+                    purpose of visit.
                   </p>
                 </div>
               </div>

@@ -234,7 +234,7 @@ export default function Navbar() {
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               <Image
-                src="/Indisconlogo.png"
+                src="/IndisconLogoprefinal.jpg"
                 alt="Conference Logo"
                 width={64}
                 height={64}
