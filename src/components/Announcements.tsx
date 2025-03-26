@@ -234,7 +234,7 @@ export default function Announcements() {
                     TPC Vice-Chairs:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Ajit Kumar Sahoo","Dr. Supratim Gupta ","Dr. Ratnakar Dash","Dr. Mahesh Mohan M R"].map(
+                    {["Prof. Ajit Kumar Sahoo","Prof. Supratim Gupta ","Prof. Ratnakar Dash","Prof. Mahesh Mohan M R"].map(
                       (name, index) => (
                         <motion.li
                           key={index}
@@ -255,7 +255,7 @@ export default function Announcements() {
                     Organizing Secretary:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Ayaskanta Swain","Dr. Shrishail Hiremath","Dr. Arnab Ghosh","Dr. Tanmoy Roy Choudhury","Mr. Nandan S"].map(
+                    {["Prof. Ayaskanta Swain","Prof. Shrishail Hiremath","Prof. Arnab Ghosh","Prof. Tanmoy Roy Choudhury","Mr. Nandan S"].map(
                       (name, index) => (
                         <motion.li
                           key={index}

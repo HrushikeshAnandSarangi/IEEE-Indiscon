@@ -57,7 +57,10 @@ export default function SpecialSessionProposal() {
               <strong>Proposal Submission Deadline:</strong> 20 Mar 2025
             </li>
             <li>
-              <strong>Notification of Acceptance/Rejection:</strong> 25 March 2025
+              <strong>Special Proposal extended Submission date:</strong> 31 Mar 2025
+            </li>
+            <li>
+              <strong>Notification of Acceptance/Rejection:</strong> 5 April 2025
             </li>
           </ul>
         </div>
