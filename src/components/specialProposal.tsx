@@ -7,7 +7,7 @@ export default function SpecialSessionProposal() {
     <>
       <div className="mb-6 sm:mb-8 w-[80%] mx-auto">
         <Image
-          src="/CallForPaper2.png"
+          src="/CallforSpecialPapers.png"
           alt="INDISCON 2025 Special Session Proposal"
           width={1000}
           height={300}
@@ -16,7 +16,7 @@ export default function SpecialSessionProposal() {
         />
       </div>
 
-      <div className="space-y-4 sm:space-y-6 h-[160vh]">
+      <div className="space-y-4 sm:space-y-6 lg:h-[130vh] h-[150vh]">
         <div className="bg-blue-50 p-4 sm:p-6 rounded-lg shadow-sm">
           <h2 className="text-lg sm:text-xl font-semibold text-indigo-800 mb-3 sm:mb-4">
             Call for Special Session Proposal
