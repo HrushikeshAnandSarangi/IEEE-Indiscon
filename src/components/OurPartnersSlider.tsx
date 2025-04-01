@@ -52,7 +52,7 @@ export default function ImageSlider() {
       onMouseLeave={() => setIsPaused(false)}
     >
       <div className="bg-blue-600 py-3 px-4 flex justify-center items-center">
-        <h2 className="text-white text-xl font-bold text-center">Our Affiliations</h2>
+        <h2 className="text-white text-xl font-bold text-center">Our Partners</h2>
       </div>
 
       <div className="relative overflow-hidden py-4">
