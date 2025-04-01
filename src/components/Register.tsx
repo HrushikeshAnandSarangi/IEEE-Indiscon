@@ -91,13 +91,6 @@ export default function FeesPage() {
             ))}
           </div>
         </div>
-  
-        <div className="bg-blue-50 rounded-lg border-l-4 border-blue-500 p-4 mb-8">
-          <p className="text-sm md:text-base text-gray-700 italic">
-            *Charges per additional paper is 50% of the full Registration fee.
-          </p>
-        </div>
-  
        
       </div>
     )
