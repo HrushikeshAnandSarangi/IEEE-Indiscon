@@ -15,7 +15,7 @@ const AboutUs: FC = () => {
     {
       title: "About IEEE INDISCON",
       content:
-        `IEEE INDISCON-2025 is the 6th edition of INDISCON and the flagship conference of the IEEE India Council. It will be organized by IEEE Rourkela Subsection at NIT Rourkela. The conference aims to foster the theme through keynotes, invited talks, and industry exhibits and oral presentation of research articles in the most relevant areas allied to the theme. The conference will also exhibit Graduate Research Forum to encourage budding young researchers to showcase their innovative research in aforementioned domains.`,
+        `IEEE INDISCON-2025 is the 6th edition of INDISCON(Conference ID #66021) and the flagship conference of the IEEE India Council. It will be organized by IEEE Rourkela Subsection at NIT Rourkela. The conference aims to foster the theme through keynotes, invited talks, and industry exhibits and oral presentation of research articles in the most relevant areas allied to the theme. The conference will also exhibit Graduate Research Forum to encourage budding young researchers to showcase their innovative research in aforementioned domains.`,
       image:
         "/Indisconlogo.png",
     },
@@ -24,7 +24,7 @@ const AboutUs: FC = () => {
       content:
         "The theme of IEEE INDISCON 2025 is Smart and Sustainable Technologies for Society. The theme focuses on the integration of innovative technological solutions aimed at addressing global challenges while promoting environmental, economic, and social sustainability. It emphasizes the development and implementation of intelligent systems, such as IoT, AI, and smart grids, that optimize resource usage, reduce waste, and improve efficiency across various sectors like energy, transportation, healthcare, and agriculture. These technologies are designed not only to enhance quality of life but also to contribute to a more sustainable future by fostering green energy solutions, reducing carbon footprints, and ensuring equitable access to essential services. Ultimately, this theme explores the intersection of cutting-edge innovation with long-term societal well-being. IEEE INDISCON 2025 will be held at NIT Rourkela, Odisha, India. The theme of the conference will foster an environment for deliberating on different research aspects on the said topic.",
       image:
-        "/ieeelogo.jpeg",
+        "/AboutTheTheme.jpg",
     },
     {
       title: "About NIT ROURKELA",
@@ -39,7 +39,7 @@ For more details visit www.nitrkl.ac.in`,
       content:
         "IEEE is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. IEEE and its members inspire a global community through IEEE highly cited publications, conferences, technology standards, and professional and educational activities. IEEE India Council is the umbrella organisation which coordinates IEEE activities in India. Its primary aim is to assist and coordinate the activities of local Sections, in order to benefit mutually, and avoid duplication of effort and resources. IEEE India Council was established on 20th May 1976 and is one of the five councils in the Asia Pacific Region (Region #10 of IEEE).For more details visit: https://ieeeindiacouncil.org/",
       image:
-        "/IEEE LGO.png",
+        "/ieeeindiacouncil_cover.jpg",
     },
     {
       title: "About IEEE Rourkela Subsection",
@@ -94,7 +94,7 @@ For more details visit www.nitrkl.ac.in`,
                 alt={section.title}
                 width={800}
                 height={450}
-                className="w-full h-64 object-cover"
+                className={`w-full ${section.image === '/AboutTheTheme.jpg' ? 'object-fill' : 'object-cover'} h-64`}
                 priority={index < 2}
               />
             </motion.div>

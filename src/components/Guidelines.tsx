@@ -150,7 +150,7 @@ export default function PaperSubmissionGuidelines() {
                 Accepted and presented papers will be submitted to IEEE Xplore for possible publication, ensuring global
                 visibility and recognition.
               </li>
-              <li>Papers should follow the IEEE conference format.</li>
+              <li>Paper should be written in IEEE double column conference format and restricted to a maximum of 6 pages only.</li>
               <li>
                 The paper should present original work not previously published or currently under review elsewhere.
               </li>
