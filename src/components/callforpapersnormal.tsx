@@ -31,7 +31,23 @@ export default function PaperSubmission() {
             breakthroughs, and foster collaborations in pioneering technological advancements.
           </p>
         </div>
-
+        <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-sm">
+          <h2 className="text-lg sm:text-xl font-semibold text-indigo-800 mb-3 sm:mb-4">Submission Guidelines</h2>
+          <ul className="list-disc pl-5 space-y-1 sm:space-y-2 text-sm sm:text-base">
+            <li>
+              Prospective authors are invited to submit their original research articles to any of the technical tracks.
+            </li>
+            <li>All papers must be submitted via Microsoft CMT.</li>
+            <li>
+              Accepted and presented papers will be submitted to IEEE Xplore for possible publication, ensuring global
+              visibility and recognition.
+            </li>
+            <li>paper should be written in IEEE double column conference format and restricted to a maximum of 6 pages only</li>
+            <li>
+              The paper should present original work not previously published or currently under review elsewhere.
+            </li>
+          </ul>
+        </div>
         <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-sm">
           <h2 className="text-lg sm:text-xl font-semibold text-indigo-800 mb-3 sm:mb-4">Technical Tracks</h2>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -101,23 +117,7 @@ export default function PaperSubmission() {
           </ul>
         </div>
 
-        <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-sm">
-          <h2 className="text-lg sm:text-xl font-semibold text-indigo-800 mb-3 sm:mb-4">Submission Guidelines</h2>
-          <ul className="list-disc pl-5 space-y-1 sm:space-y-2 text-sm sm:text-base">
-            <li>
-              Prospective authors are invited to submit their original research articles to any of the technical tracks.
-            </li>
-            <li>All papers must be submitted via Microsoft CMT.</li>
-            <li>
-              Accepted and presented papers will be submitted to IEEE Xplore for possible publication, ensuring global
-              visibility and recognition.
-            </li>
-            <li>Papers should follow the IEEE conference format.</li>
-            <li>
-              The paper should present original work not previously published or currently under review elsewhere.
-            </li>
-          </ul>
-        </div>
+
 
         <div className="flex justify-center mt-6 sm:mt-8">
           <button

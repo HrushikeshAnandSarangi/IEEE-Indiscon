@@ -17,7 +17,7 @@ const AboutUs: FC = () => {
       content:
         `IEEE INDISCON-2025 is the 6th edition of INDISCON(Conference ID #66021) and the flagship conference of the IEEE India Council. It will be organized by IEEE Rourkela Subsection at NIT Rourkela. The conference aims to foster the theme through keynotes, invited talks, and industry exhibits and oral presentation of research articles in the most relevant areas allied to the theme. The conference will also exhibit Graduate Research Forum to encourage budding young researchers to showcase their innovative research in aforementioned domains.`,
       image:
-        "/Indisconlogo.png",
+        "/indiscon-final.svg",
     },
     {
       title: "About the Theme",
