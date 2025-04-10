@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
 export default nextConfig;
 module.exports = {
   images: {
-    domains: ['res.cloudinary.com'],
+    domains: ['res.cloudinary.com','encrypted-tbn0.gstatic.com'],
+    
   },
 };

@@ -30,13 +30,19 @@ export default function Committee() {
                     <div className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white border border-gray-200 w-80 h-[320px] flex flex-col items-center">
                       <div className="flex flex-col items-center p-6 h-full justify-between">
                         <div className="relative w-40 h-40">
-                          <Image
-                            src={member.imageUrl || "/placeholder.svg"}
-                            alt={member.name}
-                            width={160}
-                            height={160}
-                            className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
-                          />
+                        <Image
+    src={member.imageUrl || "/placeholder.svg"}
+    alt={member.name}
+    width={160}
+    height={160}
+    className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
+    style={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+      objectPosition: 'center'
+    }}
+  />
                           <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
                             Patron
                           </div>
@@ -67,13 +73,19 @@ export default function Committee() {
                     <div className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white border border-gray-200 w-80 h-[320px] flex flex-col items-center">
                       <div className="flex flex-col items-center p-6 h-full justify-between">
                         <div className="relative w-40 h-40">
-                          <Image
-                            src={member.imageUrl || "/placeholder.svg"}
-                            alt={member.name}
-                            width={160}
-                            height={160}
-                            className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
-                          />
+                        <Image
+    src={member.imageUrl || "/placeholder.svg"}
+    alt={member.name}
+    width={160}
+    height={160}
+    className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
+    style={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+      objectPosition: 'center'
+    }}
+  />
                         </div>
                         <div className="text-center">
                           <h4 className="font-bold mb-2 text-gray-800 text-2xl">{member.name}</h4>
