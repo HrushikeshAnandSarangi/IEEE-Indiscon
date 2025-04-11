@@ -76,12 +76,18 @@ export default function SpecialSessionProposal() {
 
         </div>
 
-        <div className="flex justify-center mt-6 sm:mt-8">
+        <div className="flex justify-center mt-6 sm:mt-8 gap-10">
           <button
             className="px-6 sm:px-8 py-2 sm:py-3 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition-colors text-base sm:text-lg"
             onClick={() => window.open("https://cmt3.research.microsoft.com/INDISCON2025/Submission/Index", "_blank")}
           >
             Submit Special Session Proposal
+          </button>
+          <button
+            className="px-6 sm:px-8 py-2 sm:py-3 bg-black text-white font-medium rounded-md hover:bg-indigo-700 transition-colors text-base sm:text-lg"
+            onClick={() => window.open("https://drive.google.com/file/d/1GY6J2m5B2EWU9Epn6SFS-O8xgj89BffX/view?usp=sharing", "_blank")}
+          >
+            Special Session Details
           </button>
         </div>
       </div>
