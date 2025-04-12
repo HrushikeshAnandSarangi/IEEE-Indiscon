@@ -116,9 +116,9 @@ export default function Flyers() {
               {/* Close button */}
               <button
                 onClick={() => setSelectedFlyer(null)}
-                className="absolute top-4 right-4 md:-top-4 md:-right-4 p-2 rounded-full bg-background border shadow-lg hover:bg-muted transition-colors"
+                className="absolute bg-red-600 font-bold text-white top-4 right-4 md:-top-4 md:-right-4 p-2 rounded-full bg-background border shadow-lg hover:bg-muted transition-colors"
               >
-                <X className="h-6 w-6" />
+                <X className=" h-6 w-6" />
               </button>
             </div>
           </div>
