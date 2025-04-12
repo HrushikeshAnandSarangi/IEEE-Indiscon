@@ -1,11 +1,12 @@
 "use client"
 
-import Image from "next/image"
+import Flyers from "./Flyers"
+
 
 export default function SpecialSessionProposal() {
   return (
     <>
-      <div className="mb-6 sm:mb-8 w-[80%] mx-auto">
+      {/* <div className="mb-6 sm:mb-8 w-[80%] mx-auto">
         <Image
           src="/CallforSpecialPapers.png"
           alt="INDISCON 2025 Special Session Proposal"
@@ -90,7 +91,9 @@ export default function SpecialSessionProposal() {
             Special Session Details
           </button>
         </div>
-      </div>
+      </div> */}
+      <Flyers/>
+      
     </>
   )
 }

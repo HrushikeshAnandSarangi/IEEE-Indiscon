@@ -12,6 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      height: {
+        '112': '28rem',  // For the enlarged flyer
+      },
+      zIndex: {
+        '30': '30',
+        '40': '40',
+      }
     },
   },
   plugins: [],

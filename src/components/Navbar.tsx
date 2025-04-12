@@ -43,7 +43,7 @@ const navigationItems: NavItem[] = [
         href: "/guidelines",
       },
       {
-        title: "Special Proposals",
+        title: "Special Sessions",
         href: "/callforpapers",
       },
     ],
