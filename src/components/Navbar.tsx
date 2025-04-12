@@ -229,15 +229,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-24">
           <Link href="/" onClick={handleNavigate} className="flex-shrink-0 group">
             <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              initial={{ scale: 2.00 }}
+              whileHover={{ scale: 2.05 }}
+              whileTap={{ scale: 1.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               <Image
                 src="/indiscon-final.svg"
                 alt="Conference Logo"
-                width={64}
-                height={64}
+                width={128}
+                height={128}
                 className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
                 priority
               />
