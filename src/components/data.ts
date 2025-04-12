@@ -75,7 +75,7 @@ export const otherCommittees: Committee[] = [
         "id": 50,
         "name": "Prof. Shrishail Hiremath",
         "role": "ECE Department, NIT Rourkela",
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKTNEUP7-7EHoiL658cN5nSE3F2Z_7H-JxVg&s"
+        "imageUrl": "./citations(1).jpg"
       },
       {
         "id": 51,
@@ -204,7 +204,7 @@ export const otherCommittees: Committee[] = [
         id: 22,
         name: "Er. Hare Krushna Rath",
         role: "Ex-Director, DRDO, ITR Chandipur",
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQB7nb0qH98dbDmUv1x0khFipFnmRefI1Weg&s",
+        imageUrl: "./citations.jpg",
       },
       {
         id: 23,
@@ -390,7 +390,7 @@ export const otherCommittees: Committee[] = [
     members: [
       {
         "id": 54,
-        "name": "Prof. Suman Kumar Dey",
+        "name": "Prof. Suman Kr Dey",
         "role": "EE Department, NIT Rourkela",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYm2zGph6fZSF3KzOc1su3OEIsSh5BfM-iEw&s"
       },
@@ -398,7 +398,7 @@ export const otherCommittees: Committee[] = [
         "id": 55,
         "name": "Prof. Sudip Kundu",
         "role": "ECE Department, NIT Rourkela",
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAkzXto4c7iDFQhunVpNhfUSYc78affPMpQ&s"
+        "imageUrl": "./citations(2).jpg"
       },
       {
         "id": 56,
