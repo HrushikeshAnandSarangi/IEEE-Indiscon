@@ -277,6 +277,69 @@ export default function Announcements() {
                     )}
                   </ul>
                 </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    Finance Chairs:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Arun Kumar","Prof. Sandip Ghosal","Dr. Rajashree Jain"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    Publication Chairs:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Mr. Sabarinath Pillai","Prof. P.K Sharma","Prof. Basabdatta Palit","Prof. Monalisa Pattnaik","Prof. Rakesh Sinha"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    Internet and Web Chairs:
+                  </h3>
+                  <ul className="space-y-3 pl-5">
+                    {["Prof. Anirban Bhowal","Prof. Chengappa M R","Prof. P.K Jain"].map(
+                      (name, index) => (
+                        <motion.li
+                          key={index}
+                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {name}
+                        </motion.li>
+                      )
+                    )}
+                  </ul>
+                </div>
               </div>
             </AnimatedSection>
           </div>
@@ -320,59 +383,64 @@ export default function Announcements() {
           </div>
 
           <div className="space-y-6">
-            <AnimatedSection className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow h-full">
-              <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
-                Important Dates
-              </h2>
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <tbody className="divide-y divide-gray-200">
-                    {[
-                      ["Paper Submission Starts:", "01-12-2024"],
-                      [
-                        "Paper Submission Ends:",
-                        "30-04-2025",
-                        
-                      ],
-                      ["Notification of Acceptance:", "31-05-2025"],
-                      ["Camera-ready Submission:", "20-06-2025"],
-                      ["Proposal Submission Deadline:", "20-03-25"],
-                      ["Special Proposal extended submission date:","31.03.2025"],
-                      ["Notification of Acceptance/Rejection(special Proposal):", "05.04.2025"],
-                    ].map(([event, date, extended], index) => (
-                      <motion.tr
-                        key={index}
-                        className="hover:bg-gray-50 transition-colors even:bg-gray-50"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, ease: "easeOut" }}
-                      >
-                        <td className="p-3 text-gray-700 font-medium">
-                          {event}
-                        </td>
-                        <td className="p-3 text-right">
-                          <div className="flex flex-col">
-                            {extended ? (
-                              <>
-                                <span className="text-sm line-through text-gray-400">
-                                  {date}
-                                </span>
-                                <span className="text-red-600 font-semibold">
-                                  {extended}
-                                </span>
-                              </>
-                            ) : (
-                              <span className="text-gray-700">{date}</span>
-                            )}
-                          </div>
-                        </td>
-                      </motion.tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </AnimatedSection>
-          </div>
+  <AnimatedSection className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow h-full">
+    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
+      Important Dates
+    </h2>
+    <div className="overflow-x-auto">
+      <table className="w-full">
+        <tbody className="divide-y divide-gray-200">
+          {[
+            ["Paper Submission Starts:", "01-12-2024"],
+            ["Paper Submission Ends:", "30-04-2025"],
+            ["Notification of Acceptance:", "31-05-2025"],
+            ["Camera-ready Submission:", "20-06-2025"],
+            ["Proposal Submission Deadline:", "20-03-2025"],
+            ["Special Proposal extended submission date:", "31-03-2025"],
+            ["Notification of Acceptance/Rejection(special Proposal):", "05-04-2025"],
+          ].map(([event, date], index) => {
+            // Parse the date string (assuming format DD-MM-YYYY)
+            const [day, month, year] = date.split('-');
+            const dateObj = new Date(`${month}/${day}/${year}`);
+            
+            // Get current date at midnight for accurate comparison
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            const isDatePassed = dateObj < today;
+
+            return (
+              <motion.tr
+                key={index}
+                className="hover:bg-gray-50 transition-colors even:bg-gray-50"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+              >
+                <td className="p-3 text-gray-700 font-medium">
+                  {event}
+                </td>
+                <td className="p-3 text-right">
+                  <div className="flex flex-col">
+                    {isDatePassed ? (
+                      <>
+                        <span className="text-sm line-through text-red-400">
+                          {date}
+                        </span>
+                      </>
+                    ) : (
+                      <span className="text-green-400 text-sm">{date}</span>
+                    )}
+                  </div>
+                </td>
+              </motion.tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </AnimatedSection>
+</div>
         </div>
       </div>
     </div>

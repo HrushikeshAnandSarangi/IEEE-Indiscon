@@ -75,7 +75,7 @@ export const otherCommittees: Committee[] = [
         "id": 50,
         "name": "Prof. Shrishail Hiremath",
         "role": "ECE Department, NIT Rourkela",
-        "imageUrl": "./citations(1).jpg"
+        "imageUrl": "/citations1.jpg"
       },
       {
         "id": 51,
@@ -204,7 +204,7 @@ export const otherCommittees: Committee[] = [
         id: 22,
         name: "Er. Hare Krushna Rath",
         role: "Ex-Director, DRDO, ITR Chandipur",
-        imageUrl: "./citations.jpg",
+        imageUrl: "/citations.jpg",
       },
       {
         id: 23,
@@ -398,7 +398,7 @@ export const otherCommittees: Committee[] = [
         "id": 55,
         "name": "Prof. Sudip Kundu",
         "role": "ECE Department, NIT Rourkela",
-        "imageUrl": "./citations(2).jpg"
+        "imageUrl": "/citations2.jpg"
       },
       {
         "id": 56,
@@ -413,5 +413,86 @@ export const otherCommittees: Committee[] = [
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAfKlWblRJjR5dHoEoxaPSQVJKfOBQsvfS2g&s"
       }
     ]
-  }
+  },
+   {
+    "title": "Finance Chairs",
+    "members": [
+      {
+        "id": 58,
+        "name": "Prof. Arun Kumar",
+        "role": "CSE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7HDbQbsWPW8ACy_7g8CTbLTHJBSbnYJzQ6A&s"
+      },
+      {
+        "id": 59,
+        "name": "Prof. Sandip Ghosal",
+        "role": "ECE Department, NIT Rourkela",
+        "imageUrl": "/SandipGhosal.jpeg"
+      },
+      {
+        "id": 60,
+        "name": "Dr. Rajashree Jain",
+        "role": "Treasurer, IEEE India Council",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeeUPsWXGbGmzM3i1PmRWjSTP_yahMu3g9MQ&s"
+      }
+    ]
+  },
+  {
+    "title": "Publication Chairs",
+    "members": [
+      {
+        "id": 61,
+        "name": "Mr. Sabarinath Pillai",
+        "role": "Secretary, IEEE India Council",
+        "imageUrl": "/Sabarinath.jpeg"
+      },
+      {
+        "id": 62,
+        "name": "Prof. P.K Sharma",
+        "role": "ECE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAfKlWblRJjR5dHoEoxaPSQVJKfOBQsvfS2g&s"
+      },
+      {
+        "id": 63,
+        "name": "Prof. Basabdatta Palit",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkwe9ziL34x2NzLkt-2lV-ELn-wY-1qH15TQ&s"
+      },
+      {
+        "id": 64,
+        "name": "Prof. Monalisa Pattnaik",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYukutpgXJbONNGStPI9izhMUyApHJ_dv5ng&s"
+      },
+      {
+        "id": 65,
+        "name": "Prof. Rakesh Sinha",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnuU1xEDX4y2HKm9gPVOlP0kx3KhZ3GW1yw&s"
+      }
+    ]
+  },
+  {
+    "title": "Internet and Web Chairs",
+    "members": [
+      {
+        "id": 66,
+        "name": "Prof. Anirban Bhowal",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZM5o7owWopsWVdTgws4wa-BoGHi69WNBrAg&s"
+      },
+      {
+        "id": 67,
+        "name": "Mr Chengappa M R",
+        "role": "HP Inc Bangalore, India",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStd4etRi_iX0G7ONZ_XefJW5c3g6QYNHFZcA&s"
+      },
+      {
+        "id": 68,
+        "name": "Prof. P.K Jain",
+        "role": "CSE Department, NIT Rourkela",
+        "imageUrl": "/ProfPk.jpeg"
+      }
+    ]
+  } 
 ]
