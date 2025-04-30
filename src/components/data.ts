@@ -441,6 +441,13 @@ export const otherCommittees: Committee[] = [
     "title": "Publication Chairs",
     "members": [
       {
+        "id":92,
+        "name":"Dr. Abraham Varhughese",
+        "role":"Section Chair, Vizag Bay",
+        "imageUrl":"/abrahamvarughese.jpg"
+
+      },
+      {
         "id": 61,
         "name": "Mr. Sabarinath Pillai",
         "role": "Secretary, IEEE India Council",
@@ -494,5 +501,208 @@ export const otherCommittees: Committee[] = [
         "imageUrl": "/ProfPk.jpeg"
       }
     ]
-  } 
+  },
+  {
+    "title": "Registration Chairs",
+    "members": [
+      {
+        "id": 69,
+        "name": "Prof. Pawan Kumar",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyYMRr-p9ddNuAIKlJDhVZPJS1IXh68cprGw&s"
+      },
+      {
+        "id": 70,
+        "name": "Prof. Shekha Roy",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "/defaultprofile.jpg"
+      },
+      {
+        "id": 71,
+        "name": "Prof. Anusha",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "/AnushaMam.jpg"
+      },
+      {
+        "id": 72,
+        "name": "Prof. Sumit Saha",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP3sx0HYGgLGcSC6lU4qXsxm1_ra4VHCHbeA&s"
+      },
+      {
+        "id": 73,
+        "name": "Prof. Anwesha Sengupta",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwVRtoCiNAgwhKf9SKWwmFud7-RmUvKVktA&s"
+      }
+    ]
+  },
+  {
+    "title": "Women in Engineering Chairs",
+    "members": [
+      {
+        "id": 74,
+        "name": "Prof. Neeli Prasad",
+        "role": "CEO of SmartAvatar B.V Debarati Sen, IIT Kharagpur",
+        "imageUrl": "/NeeliP.jpg"
+      },
+      {
+        "id": 75,
+        "name": "Prof. S. R. Patre",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOnsMSciMbIIoicYIIRHG-X5HS9Si89qkKLA&s"
+      },
+      {
+        "id": 76,
+        "name": "Prof. Suchismita Chinara",
+        "role": "CSE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxacZbQNQ9SXK213DSK6-n1ebpnNFIahmptA&s"
+      },
+      {
+        "id": 77,
+        "name": "Prof.K Ratna Subhashini",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmNOe7BdSHb7anYjsXSWgUWbWpBXkBhHvHLQ&s"
+      },
+      {
+        "id": 78,
+        "name": "Prof. Rashmi Prasad",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpJTyoEMk10Eh9V04VErKGDuVx9WNa-ZScSQ&s"
+      },
+      {
+        "id": 79,
+        "name": "Prof. Kumari Swati",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNFp3XJj9JSLhxQcLxtzogogcOXe9R-i2Ag&s"
+      }
+    ]
+  },
+  {
+    "title": "Sponsorship Committee",
+    "members": [
+      {
+        "id": 77,
+        "name": "Prof. Subrata Karmakar",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqmlg3Mv5G5QYKIjInHySHexis7PPU4dAKUg&s"
+      },
+      {
+        "id": 78,
+        "name": "Prof. L.P Roy",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9hoiEIURlxPKME_2RYMHfKlsCh__poWcKQ&s"
+      },
+      {
+        "id": 79,
+        "name": "Prof. Sudip Kundu",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "/citations2.jpg"
+      },
+      {
+        "id": 80,
+        "name": "Prof. Santosh Das",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSwNrju8b0sQLV1EThIKSFOhpDKRoUCqD4Zw&s"
+      }
+    ]
+  },
+  {
+    "title": "Special Session Chairs",
+    "members": [
+      {
+        "id": 81,
+        "name": "Prof. A.Ghosh",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "/ArnabGhosh.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Young Professional",
+    "members": [
+      {
+        "id": 82,
+        "name": "Prof.Situ Rani Patre",
+        "role": "EC Department,NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOnsMSciMbIIoicYIIRHG-X5HS9Si89qkKLA&s"
+      }
+    ]
+  },
+  {
+    "title": "Industry Track and Interfacing Chairs",
+    "members": [
+      {
+        "id": 83,
+        "name": "Mr.Chandan Pramanik",
+        "role": "Director Education, MathWorks India Private Limited",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdpo63yU3KnHRk6I42hzqXN4BoYl26cI9-g&s"
+      },
+      {
+        "id": 84,
+        "name": "Prof. Jogesh Chandra Dash",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1Z1NG0Gs1aHxTeAkJtTomuNozMwfjt3SBw&s"
+      },
+      {
+        "id": 85,
+        "name": "Prof.Arijit Guha",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROwujJTc_JymxIvanoOQPyyhwWjnpuAsHV7w&s"
+      },
+      {
+        "id": 86,
+        "name": "Prasanjit Dey",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDYN3su4dJPUamg17gnkEJGutFy7MtuXNuBw&s"
+      },
+      {
+        "id": 87,
+        "name": "Prof. Sanath Sahu",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWn9Eh8YkstaKw1ZZQql6rfHA6KRjmM8J9tQ&s"
+      }
+    ]
+  },
+  {
+    "title": "Local Arrangement Chairs",
+    "members": [
+      {
+        "id": 86,
+        "name": "Prof. Sanatanu Sarkar",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdelsZ6fJq-f0cbbIpTCKYrkdHPWiHcW6GWQ&s"
+      },
+      {
+        "id": 87,
+        "name": "Prof. R.K. Mohapatra",
+        "role": "CSE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBRO331pVjGt_XZhz3uiUk9P53j5aHjirE6g&s"
+      },
+      {
+        "id": 88,
+        "name": "Prof. Sadananda Behera",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFLHUMqT7tru9wVujvpoeOwKAX86jYR55PQ&s"
+      },
+      {
+        "id": 89,
+        "name": "Prof. Prasad N. Ramavath",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eDzqIIO2RSpQ_73xim1q1pGY7vAQx-e4zQ&s"
+      },
+      {
+        "id": 90,
+        "name": "Prof. Indrajit Sarkar",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "/ISarkar.jpg"
+      },
+      {
+        "id": 91,
+        "name": "Prof. Rashmi Achla Minz",
+        "role": "EC Department, NIT Rourkela",
+        "imageUrl": "/RMinz.jpg"
+      }
+    ]
+  }
 ]

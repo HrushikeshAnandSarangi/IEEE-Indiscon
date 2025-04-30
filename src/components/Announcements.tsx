@@ -304,7 +304,7 @@ export default function Announcements() {
                     Publication Chairs:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Mr. Sabarinath Pillai","Prof. P.K Sharma","Prof. Basabdatta Palit","Prof. Monalisa Pattnaik","Prof. Rakesh Sinha"].map(
+                    {["Dr. Abraham Varughese","Mr. Sabarinath Pillai","Prof. P.K Sharma","Prof. Basabdatta Palit","Prof. Monalisa Pattnaik","Prof. Rakesh Sinha"].map(
                       (name, index) => (
                         <motion.li
                           key={index}

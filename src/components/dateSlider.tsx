@@ -11,7 +11,7 @@ const IMPORTANT_DATES = [
   {
     id: 2,
     title: "Paper Submission Ends",
-    date: new Date("2025-04-30"),
+    date: new Date("2025-05-10"),
   },
   {
     id: 3,
@@ -38,6 +38,11 @@ const IMPORTANT_DATES = [
     title: "Notification of Acceptance/Rejection of Special Proposals",
     date: new Date("2025-04-05"),
   },
+  {
+    id:8,
+    title:"Registration Deadline",
+    date:new Date("2025-07-15"),
+  }
 ]
 
 export default function ImportantDatesSlider() {
@@ -132,12 +137,16 @@ export default function ImportantDatesSlider() {
               }}
             >
               <div className="flex justify-between items-start mb-2">
-                <h3 className="text-lg font-medium text-blue-800 truncate">{item.title}</h3>
+                <h3 className={`text-lg font-medium text-blue-800 truncate`}>{item.title}</h3>
                 <span className={`text-xs px-2 py-1 rounded-full text-white ${getStatusColor(item.date)}`}>
-                  {getDaysRemaining(item.date)}
+                  {getDaysRemaining(item.date===new Date("2025-04-30")?new Date("2025-05-10"):item.date)}
                 </span>
               </div>
-              <p className="text-blue-600 font-medium">{formatDate(item.date)}</p>
+              <p className={`${item.title==="Paper Submission Ends"?"text-red-500 line-through ":""}text-blue-600 font-medium`}>{item.title==="Paper Submission Ends"?"30 Apr, 2025":formatDate(item.date)}</p>
+              {item.title==="Paper Submission Ends"&&(
+                <p className="text-blue-800  font-medium">May 10, 2025 <span className="text-red-500">(Hard Deadline)</span></p>
+              )}
+              
             </div>
           ))}
         </div>
