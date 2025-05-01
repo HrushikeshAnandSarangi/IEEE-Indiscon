@@ -548,7 +548,7 @@ export const otherCommittees: Committee[] = [
       },
       {
         "id": 75,
-        "name": "Prof. S. R. Patre",
+        "name": "Prof. Situ Rani Patre",
         "role": "EC Department, NIT Rourkela",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOnsMSciMbIIoicYIIRHG-X5HS9Si89qkKLA&s"
       },
@@ -612,7 +612,7 @@ export const otherCommittees: Committee[] = [
     "members": [
       {
         "id": 81,
-        "name": "Prof. A.Ghosh",
+        "name": "Prof. Arnab Ghosh",
         "role": "EE Department, NIT Rourkela",
         "imageUrl": "/ArnabGhosh.jpg"
       }
@@ -652,7 +652,7 @@ export const otherCommittees: Committee[] = [
       },
       {
         "id": 86,
-        "name": "Prasanjit Dey",
+        "name": "Prof. Prasanjit Dey",
         "role": "EE Department, NIT Rourkela",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDYN3su4dJPUamg17gnkEJGutFy7MtuXNuBw&s"
       },
