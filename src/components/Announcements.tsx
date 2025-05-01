@@ -325,7 +325,7 @@ export default function Announcements() {
                     Internet and Web Chairs:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Anirban Bhowal","Prof. Chengappa M R","Prof. P.K Jain"].map(
+                    {["Prof. Anirban Bhowal","Mr.Chengappa M R","Prof. P.K Jain"].map(
                       (name, index) => (
                         <motion.li
                           key={index}
