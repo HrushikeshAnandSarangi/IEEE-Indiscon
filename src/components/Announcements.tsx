@@ -422,11 +422,17 @@ export default function Announcements() {
                 </td>
                 <td className="p-3 text-right">
                   <div className="flex flex-col">
-                    {isDatePassed ? (
+                    {(isDatePassed)  ? (
                       <>
                         <span className="text-sm line-through text-red-400">
                           {date}
                         </span>
+                        {date=== "30-04-2025" &&
+                         <span className="text-sm text-green-400">
+                         {date=== "30-04-2025" ? "10-05-2025 " : ""}
+                         <span className="text-red-500 font-bold">(Hard Deadline)</span>
+                       </span>}
+                       
                       </>
                     ) : (
                       <span className="text-green-400 text-sm">{date}</span>
