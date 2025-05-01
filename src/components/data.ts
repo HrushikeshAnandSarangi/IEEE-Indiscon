@@ -515,7 +515,7 @@ export const otherCommittees: Committee[] = [
         "id": 70,
         "name": "Prof. Shekha Rai",
         "role": "EE Department, NIT Rourkela",
-        "imageUrl": "/defaultprofile.jpg"
+        "imageUrl": "/ShekhaRai.jpg"
       },
       {
         "id": 71,
