@@ -63,41 +63,6 @@ export const otherCommittees: Committee[] = [
     ],
   },
   {
-    title: "Organizing Secretary",
-    members: [
-      {
-        "id": 49,
-        "name": "Prof. Ayaskanta Swain",
-        "role": "ECE Department, NIT Rourkela",
-        "imageUrl": "/AyashKantaSwain.jpg"
-      },
-      {
-        "id": 50,
-        "name": "Prof. Shrishail Hiremath",
-        "role": "ECE Department, NIT Rourkela",
-        "imageUrl": "/citations1.jpg"
-      },
-      {
-        "id": 51,
-        "name": "Prof. Arnab Ghosh",
-        "role": " EE Department, NIT Rourkela",
-        "imageUrl": "/ArnabGhosh.jpg"
-      },
-      {
-        "id": 52,
-        "name": "Prof. Tanmoy Roy Choudhury",
-        "role": "EE Department, NIT Rourkela",
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgt5uHmw9uwK3r2n45CS-F1xS9jRyY3lqnZg&s"
-      },
-      {
-        "id": 53,
-        "name": "Mr. Nandan S",
-        "role": "Secretary IEEE India Council",
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdSXJaHkiUdEaH6TZ8YsKrY3Jxj6oc4Sz-Cw&s"
-      }
-    ]
-  },
-  {
     title: "Executive Steering Committee",
     members: [
       {
@@ -384,6 +349,41 @@ export const otherCommittees: Committee[] = [
       }
     ]
   },
+  {
+    title: "Organizing Secretary",
+    members: [
+      {
+        "id": 49,
+        "name": "Prof. Ayaskanta Swain",
+        "role": "ECE Department, NIT Rourkela",
+        "imageUrl": "/AyashKantaSwain.jpg"
+      },
+      {
+        "id": 50,
+        "name": "Prof. Shrishail Hiremath",
+        "role": "ECE Department, NIT Rourkela",
+        "imageUrl": "/citations1.jpg"
+      },
+      {
+        "id": 51,
+        "name": "Prof. Arnab Ghosh",
+        "role": " EE Department, NIT Rourkela",
+        "imageUrl": "/ArnabGhosh.jpg"
+      },
+      {
+        "id": 52,
+        "name": "Prof. Tanmoy Roy Choudhury",
+        "role": "EE Department, NIT Rourkela",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgt5uHmw9uwK3r2n45CS-F1xS9jRyY3lqnZg&s"
+      },
+      {
+        "id": 53,
+        "name": "Mr. Nandan S",
+        "role": "Secretary IEEE India Council",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdSXJaHkiUdEaH6TZ8YsKrY3Jxj6oc4Sz-Cw&s"
+      }
+    ]
+  },
   
   {
     title: "Co-Organizing Secretary",
@@ -513,7 +513,7 @@ export const otherCommittees: Committee[] = [
       },
       {
         "id": 70,
-        "name": "Prof. Shekha Roy",
+        "name": "Prof. Shekha Rai",
         "role": "EE Department, NIT Rourkela",
         "imageUrl": "/defaultprofile.jpg"
       },
@@ -689,7 +689,7 @@ export const otherCommittees: Committee[] = [
         "id": 89,
         "name": "Prof. Prasad N. Ramavath",
         "role": "EC Department, NIT Rourkela",
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eDzqIIO2RSpQ_73xim1q1pGY7vAQx-e4zQ&s"
+        "imageUrl": "/PrasadSir.jpg"
       },
       {
         "id": 90,

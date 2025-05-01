@@ -19,37 +19,39 @@ export default function Committee() {
 
         {/* Patrons Section */}
         <div className="mb-24 flex flex-col items-center">
-          {patronCommittees.map((committee, ) => (
+          {patronCommittees.map((committee) => (
             <div key={committee.title} className="mb-16 animate-fadeUp w-full flex flex-col items-center">
               <h3 className="text-3xl font-bold mb-3 text-blue-700">{committee.title}</h3>
               <div className="h-1 w-32 mb-6 bg-blue-700"></div>
 
-              <div className="flex flex-wrap justify-center gap-8 w-full max-w-4xl">
+              <div className="flex flex-wrap justify-center gap-8 w-full max-w-6xl">
                 {committee.members.map((member) => (
-                  <div key={member.id} className="transition-transform duration-300 hover:-translate-y-2 flex justify-center w-80">
-                    <div className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white border border-gray-200 w-80 h-[320px] flex flex-col items-center">
+                  <div key={member.id} className="transition-transform duration-300 hover:-translate-y-2 flex justify-center w-64">
+                    <div className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white border border-gray-200 w-64 h-[300px] flex flex-col items-center">
                       <div className="flex flex-col items-center p-6 h-full justify-between">
-                        <div className="relative w-40 h-40">
-                        <Image
-    src={member.imageUrl || "/placeholder.svg"}
-    alt={member.name}
-    width={160}
-    height={160}
-    className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
-    style={{
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-      objectPosition: 'center'
-    }}
-  />
-                          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                            Patron
-                          </div>
+                        <div className="relative w-32 h-32">
+                          <Image
+                            src={member.imageUrl || "/placeholder.svg"}
+                            alt={member.name}
+                            width={128}
+                            height={128}
+                            className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
+                            style={{
+                              width: '100%',
+                              height: '100%',
+                              objectFit: 'cover',
+                              objectPosition: 'center'
+                            }}
+                          />
+                          {committee.title.includes("Patron") && (
+                            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                              Patron
+                            </div>
+                          )}
                         </div>
                         <div className="text-center">
-                          <h4 className="font-bold mb-2 text-gray-800 text-2xl">{member.name}</h4>
-                          <p className="text-gray-600 font-medium">{member.role}</p>
+                          <h4 className="font-bold mb-2 text-gray-800 text-xl">{member.name}</h4>
+                          <p className="text-gray-600 font-medium text-sm">{member.role}</p>
                         </div>
                       </div>
                     </div>
@@ -62,34 +64,34 @@ export default function Committee() {
 
         {/* Other Committees Section */}
         <div className="mb-24 flex flex-col items-center">
-          {otherCommittees.map((committee, ) => (
+          {otherCommittees.map((committee) => (
             <div key={committee.title} className="mb-16 animate-fadeUp w-full flex flex-col items-center">
               <h3 className="text-3xl font-bold mb-3 text-blue-700">{committee.title}</h3>
               <div className="h-1 w-32 mb-6 bg-blue-700"></div>
 
-              <div className="flex flex-wrap justify-center gap-8 w-full max-w-4xl">
+              <div className="flex flex-wrap justify-center gap-8 w-full max-w-6xl">
                 {committee.members.map((member) => (
-                  <div key={member.id} className="transition-transform duration-300 hover:-translate-y-2 flex justify-center w-80">
-                    <div className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white border border-gray-200 w-80 h-[320px] flex flex-col items-center">
+                  <div key={member.id} className="transition-transform duration-300 hover:-translate-y-2 flex justify-center w-64">
+                    <div className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl bg-white border border-gray-200 w-64 h-[300px] flex flex-col items-center">
                       <div className="flex flex-col items-center p-6 h-full justify-between">
-                        <div className="relative w-40 h-40">
-                        <Image
-    src={member.imageUrl || "/placeholder.svg"}
-    alt={member.name}
-    width={160}
-    height={160}
-    className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
-    style={{
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-      objectPosition: 'center'
-    }}
-  />
+                        <div className="relative w-32 h-32">
+                          <Image
+                            src={member.imageUrl || "/placeholder.svg"}
+                            alt={member.name}
+                            width={128}
+                            height={128}
+                            className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
+                            style={{
+                              width: '100%',
+                              height: '100%',
+                              objectFit: 'cover',
+                              objectPosition: 'center'
+                            }}
+                          />
                         </div>
                         <div className="text-center">
-                          <h4 className="font-bold mb-2 text-gray-800 text-2xl">{member.name}</h4>
-                          <p className="text-gray-600 font-medium">{member.role}</p>
+                          <h4 className="font-bold mb-2 text-gray-800 text-xl">{member.name}</h4>
+                          <p className="text-gray-600 font-medium text-sm">{member.role}</p>
                         </div>
                       </div>
                     </div>
