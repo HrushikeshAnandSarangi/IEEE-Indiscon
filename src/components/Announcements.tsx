@@ -35,7 +35,7 @@ export default function Announcements() {
           {/* <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
             Announcements
           </h2> */}
-          <ImageSlider/>
+          <ImageSlider />
         </AnimatedSection>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           <div className="space-y-6 overflow-y-auto h-[150vh] bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
@@ -73,19 +73,22 @@ export default function Announcements() {
                     Co-Patrons:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Suparna Kar Chowdhury","Prof. Dipankar Debnath","Prof. Subhranshu Samantray","Prof. S. M. Sameer"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Suparna Kar Chowdhury",
+                      "Prof. Dipankar Debnath",
+                      "Prof. Subhranshu Samantray",
+                      "Prof. S. M. Sameer",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -94,19 +97,24 @@ export default function Announcements() {
                     Executive Steering Committee:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Mr. Deepak Mathur","Prof. Suresh Nair","Prof. Debabrata Das","Prof. K. V. S. Hari","Prof. Ashutosh Dutta","Prof. Celia Shahnaz"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Mr. Deepak Mathur",
+                      "Prof. Suresh Nair",
+                      "Prof. Debabrata Das",
+                      "Prof. K. V. S. Hari",
+                      "Prof. Ashutosh Dutta",
+                      "Prof. Celia Shahnaz",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -115,40 +123,57 @@ export default function Announcements() {
                     International Advisory Committee:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Sajal Das","Prof. Amit Mishra","Prof. Ranga Rao Venkatesha Prasad","Prof. Akshay Rathore ","Prof. Aryan Kaushik"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Sajal Das",
+                      "Prof. Amit Mishra",
+                      "Prof. Ranga Rao Venkatesha Prasad",
+                      "Prof. Akshay Rathore ",
+                      "Prof. Aryan Kaushik",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
-                <div >
+                <div>
                   <h3 className="font-semibold text-lg text-gray-800 mb-2 flex items-center">
                     <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
                     National Advisory Committee:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Ganpati Panda","Prof. Pradipta Kumar Nanda","Prof. Iti Saha Misra","Prof. Bansidhar Majhi","Er. Hare Krushna Rath","Prof. Anup Kumar Panda","Prof. Kamalakanta. Mahapatra","Prof.  Dipti Patra","Prof.  Kanungo Barada Mohanty","Prof.  Bibhudatta Sahoo","Prof. Sukadev Meher","Prof. Durga Prasad Mohapatra","Prof. Debiprasad Priyabrata Acharya ","Prof. Prasanna Kumar Sahu"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Ganpati Panda",
+                      "Prof. Pradipta Kumar Nanda",
+                      "Prof. Iti Saha Misra",
+                      "Prof. Bansidhar Majhi",
+                      "Er. Hare Krushna Rath",
+                      "Prof. Anup Kumar Panda",
+                      "Prof. Kamalakanta. Mahapatra",
+                      "Prof.  Dipti Patra",
+                      "Prof.  Kanungo Barada Mohanty",
+                      "Prof.  Bibhudatta Sahoo",
+                      "Prof. Sukadev Meher",
+                      "Prof. Durga Prasad Mohapatra",
+                      "Prof. Debiprasad Priyabrata Acharya ",
+                      "Prof. Prasanna Kumar Sahu",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -157,19 +182,24 @@ export default function Announcements() {
                     Honorary Chair:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Saswat Chakrabarti","Prof. Bhaskar Gupta","Prof. Sarat Kumar Patra","Prof. Bidyadhar Subudhi","Prof. Sukumar Mishra","Prof. Bijaya Ketan Panigrahi"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Saswat Chakrabarti",
+                      "Prof. Bhaskar Gupta",
+                      "Prof. Sarat Kumar Patra",
+                      "Prof. Bidyadhar Subudhi",
+                      "Prof. Sukumar Mishra",
+                      "Prof. Bijaya Ketan Panigrahi",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -178,19 +208,21 @@ export default function Announcements() {
                     General Chairs:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Poonam Singh","Prof. Susmita Das","Prof. Sudip Misra"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Poonam Singh",
+                      "Prof. Susmita Das",
+                      "Prof. Sudip Misra",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -199,19 +231,22 @@ export default function Announcements() {
                     TPC Chairs:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Ashok Kumar Turuk","Prof. Pravat Kumar Ray","Prof. Preetam Kumar","Prof. Mrinal Kanti Mandal"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Ashok Kumar Turuk",
+                      "Prof. Pravat Kumar Ray",
+                      "Prof. Preetam Kumar",
+                      "Prof. Mrinal Kanti Mandal",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -220,19 +255,22 @@ export default function Announcements() {
                     TPC Vice-Chairs:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Ajit Kumar Sahoo","Prof. Supratim Gupta ","Prof. Ratnakar Dash","Prof. Mahesh Mohan M R"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Ajit Kumar Sahoo",
+                      "Prof. Supratim Gupta ",
+                      "Prof. Ratnakar Dash",
+                      "Prof. Mahesh Mohan M R",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -241,19 +279,23 @@ export default function Announcements() {
                     Organizing Secretary:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Ayaskanta Swain","Prof. Shrishail Hiremath","Prof. Arnab Ghosh","Prof. Tanmoy Roy Choudhury","Mr. Nandan S"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Ayaskanta Swain",
+                      "Prof. Shrishail Hiremath",
+                      "Prof. Arnab Ghosh",
+                      "Prof. Tanmoy Roy Choudhury",
+                      "Mr. Nandan S",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -262,19 +304,22 @@ export default function Announcements() {
                     Co-Organizing Secretary:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Suman Kumar Dey","Prof. Sudip Kundu","Prof. Sandip Ghoshal","Prof. Pankaj Sharma"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Suman Kumar Dey",
+                      "Prof. Sudip Kundu",
+                      "Prof. Sandip Ghoshal",
+                      "Prof. Pankaj Sharma",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -283,19 +328,21 @@ export default function Announcements() {
                     Finance Chairs:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Arun Kumar","Prof. Sandip Ghosal","Dr. Rajashree Jain"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Arun Kumar",
+                      "Prof. Sandip Ghosal",
+                      "Dr. Rajashree Jain",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -304,19 +351,24 @@ export default function Announcements() {
                     Publication Chairs:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Dr. Abraham Varughese","Mr. Sabarinath Pillai","Prof. P.K Sharma","Prof. Basabdatta Palit","Prof. Monalisa Pattnaik","Prof. Rakesh Sinha"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Dr. Abraham Varughese",
+                      "Mr. Sabarinath Pillai",
+                      "Prof. P.K Sharma",
+                      "Prof. Basabdatta Palit",
+                      "Prof. Monalisa Pattnaik",
+                      "Prof. Rakesh Sinha",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
                 <div>
@@ -325,19 +377,21 @@ export default function Announcements() {
                     Internet and Web Chairs:
                   </h3>
                   <ul className="space-y-3 pl-5">
-                    {["Prof. Anirban Bhowal","Mr.Chengappa M R","Prof. P.K Jain"].map(
-                      (name, index) => (
-                        <motion.li
-                          key={index}
-                          className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                          {name}
-                        </motion.li>
-                      )
-                    )}
+                    {[
+                      "Prof. Anirban Bhowal",
+                      "Mr.Chengappa M R",
+                      "Prof. P.K Jain",
+                    ].map((name, index) => (
+                      <motion.li
+                        key={index}
+                        className="text-gray-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-indigo-200 before:rounded-full"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      >
+                        {name}
+                      </motion.li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -354,18 +408,18 @@ export default function Announcements() {
               </p>
               <ul className="space-y-4">
                 {[
-                    "Track 1: AI & ML, Data Science",
-                    "Track 2: Sensors, Instrumentation, Control and Automation",
-                    "Track 3: Network and Hardware Security, Cryptography, and Block chain Technology",
-                    "Track 4: Neuromorphic, Quantum Computing, Parallel and Distributed computing and Sustainable Computing",
-                    "Track 5: Optical/RF/Microwave/Radar/Terahertz Technologies",
-                    "Track 6: VLSI and Embedded Systems, Semiconductor Devices, Circuits, MEMS",
-                    "Track 7: Robotics, UAV, and Autonomous Vehicle",
-                    "Track 8: Signal, Image and Multimedia Processing, Digital Healthcare",
-                    "Track 9: Next Generation Communication Technologies and Networks",
-                    "Track 10: Power Electronics and Power Systems",
-                    "Track 11: Electric Vehicles, Sustainable Technologies",
-                    "Track 12: IoT, Cyber Physical Systems, and Industry4.0",
+                  "Track 1: AI & ML, Data Science",
+                  "Track 2: Sensors, Instrumentation, Control and Automation",
+                  "Track 3: Network and Hardware Security, Cryptography, and Block chain Technology",
+                  "Track 4: Neuromorphic, Quantum Computing, Parallel and Distributed computing and Sustainable Computing",
+                  "Track 5: Optical/RF/Microwave/Radar/Terahertz Technologies",
+                  "Track 6: VLSI and Embedded Systems, Semiconductor Devices, Circuits, MEMS",
+                  "Track 7: Robotics, UAV, and Autonomous Vehicle",
+                  "Track 8: Signal, Image and Multimedia Processing, Digital Healthcare",
+                  "Track 9: Next Generation Communication Technologies and Networks",
+                  "Track 10: Power Electronics and Power Systems",
+                  "Track 11: Electric Vehicles, Sustainable Technologies",
+                  "Track 12: IoT, Cyber Physical Systems, and Industry4.0",
                 ].map((track, index) => (
                   <motion.li
                     key={index}
@@ -383,70 +437,82 @@ export default function Announcements() {
           </div>
 
           <div className="space-y-6">
-  <AnimatedSection className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow h-full">
-    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
-      Important Dates
-    </h2>
-    <div className="overflow-x-auto">
-      <table className="w-full">
-        <tbody className="divide-y divide-gray-200">
-          {[
-            ["Paper Submission Starts:", "01-12-2024"],
-            ["Paper Submission Ends:", "30-04-2025"],
-            ["Notification of Acceptance:", "31-05-2025"],
-            ["Camera-ready Submission:", "20-06-2025"],
-            ["Proposal Submission Deadline:", "20-03-2025"],
-            ["Special Proposal extended submission date:", "31-03-2025"],
-            ["Notification of Acceptance/Rejection(special Proposal):", "05-04-2025"],
-          ].map(([event, date], index) => {
-            // Parse the date string (assuming format DD-MM-YYYY)
-            const [day, month, year] = date.split('-');
-            const dateObj = new Date(`${month}/${day}/${year}`);
-            
-            // Get current date at midnight for accurate comparison
-            const today = new Date();
-            today.setHours(0, 0, 0, 0);
-            
-            const isDatePassed = dateObj < today;
+            <AnimatedSection className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow h-full">
+              <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
+                Important Dates
+              </h2>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <tbody className="divide-y divide-gray-200">
+                    {[
+                      ["Paper Submission Starts:", "01-12-2024"],
+                      ["Paper Submission Ends:", "30-04-2025"],
+                      ["Notification of Acceptance:", "31-05-2025"],
+                      ["Camera-ready Submission:", "20-06-2025"],
+                      ["Proposal Submission Deadline:", "20-03-2025"],
+                      [
+                        "Special Proposal extended submission date:",
+                        "31-03-2025",
+                      ],
+                      [
+                        "Notification of Acceptance/Rejection(special Proposal):",
+                        "05-04-2025",
+                      ],
+                    ].map(([event, date], index) => {
+                      // Parse the date string (assuming format DD-MM-YYYY)
+                      const [day, month, year] = date.split("-");
+                      const dateObj = new Date(`${month}/${day}/${year}`);
 
-            return (
-              <motion.tr
-                key={index}
-                className="hover:bg-gray-50 transition-colors even:bg-gray-50"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-              >
-                <td className="p-3 text-gray-700 font-medium">
-                  {event}
-                </td>
-                <td className="p-3 text-right">
-                  <div className="flex flex-col">
-                    {(isDatePassed)  ? (
-                      <>
-                        <span className="text-sm line-through text-red-400">
-                          {date}
-                        </span>
-                        {date=== "30-04-2025" &&
-                         <span className="text-sm text-green-400">
-                         {date=== "30-04-2025" ? "10-05-2025 " : ""}
-                         <span className="text-red-500 font-bold">(Hard Deadline)</span>
-                       </span>}
-                       
-                      </>
-                    ) : (
-                      <span className="text-green-400 text-sm">{date}</span>
-                    )}
-                  </div>
-                </td>
-              </motion.tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  </AnimatedSection>
-</div>
+                      // Get current date at midnight for accurate comparison
+                      const today = new Date();
+                      today.setHours(0, 0, 0, 0);
+
+                      const isDatePassed = dateObj < today;
+
+                      return (
+                        <motion.tr
+                          key={index}
+                          className="hover:bg-gray-50 transition-colors even:bg-gray-50"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          <td className="p-3 text-gray-700 font-medium">
+                            {event}
+                          </td>
+                          <td className="p-3 text-right">
+                            <div className="flex flex-col">
+                              {isDatePassed ? (
+                                <>
+                                  <span className="text-sm line-through text-red-400">
+                                    {date}
+                                  </span>
+                                  {date === "30-04-2025" && (
+                                    <span className="text-sm text-green-400">
+                                      {date === "30-04-2025"
+                                        ? "10-05-2025 "
+                                        : ""}
+                                      <span className="text-red-500 font-bold">
+                                        (Hard Deadline)
+                                      </span>
+                                    </span>
+                                  )}
+                                </>
+                              ) : (
+                                <span className="text-green-400 text-sm">
+                                  {date}
+                                </span>
+                              )}
+                            </div>
+                          </td>
+                        </motion.tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </div>
     </div>
@@ -480,7 +546,6 @@ export default function Announcements() {
 //     alt: "IEEE Rourkela",
 //   }
 
-  
 // ]
 
 // export default function ImageSlider() {
@@ -537,9 +602,9 @@ export default function Announcements() {
 //             >
 //               <div className=" h-full w-full flex items-center justify-center p-3 rounded-md ">
 //                 <div className={`relative ${image.id === 2 ? 'w-[120%] h-[80px]' : 'w-full h-[80px]'}`}>
-//                   <Image 
-//                     src={image.src} 
-//                     alt={image.alt} 
+//                   <Image
+//                     src={image.src}
+//                     alt={image.alt}
 //                     fill
 //                     sizes="(max-width: 768px) 100vw, 250px"
 //                     style={{
