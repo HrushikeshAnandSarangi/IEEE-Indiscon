@@ -109,7 +109,7 @@ export default function PaperSubmission() {
               <strong>Paper Submission Ends:</strong> 30-04-2025
             </li>
             <li>
-              <strong>Notification of Acceptance:</strong> 31-05-2025
+              <strong>Notification of Acceptance:</strong> 10-06-2025
             </li>
             <li>
               <strong>Camera-ready Submission:</strong> 20-06-2025
