@@ -16,7 +16,7 @@ const IMPORTANT_DATES = [
   {
     id: 3,
     title: "Notification of Acceptance",
-    date: new Date("2025-05-31"),
+    date: new Date("2025-06-10"),
   },
   {
     id: 4,
