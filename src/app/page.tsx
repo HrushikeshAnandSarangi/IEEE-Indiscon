@@ -6,6 +6,7 @@ import React from 'react'
 import VantaGlobe from '../components/vantaglobe/VantaGlobe'
 import ImportantDatesSlider from '@/components/dateSlider'
 
+
 export default function page() {
   return (
     <>

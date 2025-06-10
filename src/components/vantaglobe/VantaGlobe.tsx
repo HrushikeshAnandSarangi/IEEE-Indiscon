@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import * as THREE from 'three';
 import Link from 'next/link';
+import AnnouncementBanner from '../NotificationImp';
+
 interface VantaEffect {
   destroy: () => void;
   camera?: THREE.PerspectiveCamera;
@@ -87,13 +89,13 @@ const VantaGlobe: React.FC = () => {
   return (
     <div className="relative w-screen h-screen " onMouseMove={handleMouseMove}>
       <motion.div ref={containerRef} className="absolute top-0 left-0 w-full h-full" />
-
       <motion.div
         className="absolute w-full inset-0 flex flex-col items-center justify-center text-center text-white px-6 bg-[#151515] bg-opacity-40  "
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
+        <AnnouncementBanner/>
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">IEEE INDISCON 2025</h1>
         <p className=" md:text-xl mb-6 max-w-2xl  text-white font-semibold text-justify"> 
         IEEE INDISCON-2025 is the flagship conference of the IEEE India Council. It will be the 6th edition of INDISCON and will be held at NIT Rourkela under the aegis of IEEE Rourkela Subsection. The conference is envisioned to provide a big platform for researchers from academia and industry not only to share their research, but also provide networking opportunities among the peers for collaborations. 

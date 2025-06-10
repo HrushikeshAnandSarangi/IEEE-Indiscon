@@ -21,7 +21,7 @@ const IMPORTANT_DATES = [
   {
     id: 4,
     title: "Camera-ready Submission",
-    date: new Date("2025-06-20"),
+    date: new Date("2025-07-15"),
   },
   {
     id: 5,
@@ -142,11 +142,25 @@ export default function ImportantDatesSlider() {
                   {getDaysRemaining(item.date===new Date("2025-04-30")?new Date("2025-05-10"):item.date)}
                 </span>
               </div>
-              <p className={`${item.title==="Paper Submission Ends"?"text-red-500 line-through ":""}text-blue-600 font-medium`}>{item.title==="Paper Submission Ends"?"30 Apr, 2025":formatDate(item.date)}</p>
+              <p className={`${item.title==="Paper Submission Ends"|| item.title==="Camera-ready Submission"?"text-red-500 line-through ":""}text-blue-600 font-medium`}>
+                {(() => {
+                  switch(item.title){
+                    case "Paper Submission Ends":
+                      return "30 Apr, 2025";
+                    case "Camera-ready Submission":
+                      return "20 Jun, 2025";
+                    default:
+                      return formatDate(item.date);
+                  }
+                })()}
+              </p>
               {item.title==="Paper Submission Ends"&&(
                 <p className="text-blue-800  font-medium">May 10, 2025 <span className="text-red-500">(Hard Deadline)</span></p>
               )}
-              
+              {item.title==="Camera-ready Submission"&&(
+                <p className="text-blue-800  font-medium">Jul 15,2025 </p>
+              )}
+
             </div>
           ))}
         </div>

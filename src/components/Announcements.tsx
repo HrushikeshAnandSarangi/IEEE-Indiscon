@@ -36,6 +36,9 @@ export default function Announcements() {
           {/* <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
             Announcements
           </h2> */}
+  {/* Announcement Card */}
+
+          
           <ImageSlider />
           <div className="h-4"></div>
           <ImageSliderTech/>
@@ -451,7 +454,7 @@ export default function Announcements() {
                       ["Paper Submission Starts:", "01-12-2024"],
                       ["Paper Submission Ends:", "30-04-2025"],
                       ["Notification of Acceptance:", "31-05-2025"],
-                      ["Camera-ready Submission:", "20-06-2025"],
+                      ["Camera-ready Submission:", "15-07-2025"],
                       ["Proposal Submission Deadline:", "20-03-2025"],
                       [
                         "Special Proposal extended submission date:",
@@ -491,7 +494,7 @@ export default function Announcements() {
                                     {date}
                                   </span>
                                   {date === "30-04-2025" && (
-                                    <span className="text-sm text-green-400">
+                                    <span className="text-sm text-red-400">
                                       {date === "30-04-2025"
                                         ? "10-05-2025 "
                                         : ""}
@@ -503,7 +506,18 @@ export default function Announcements() {
                                 </>
                               ) : (
                                 <span className="text-green-400 text-sm">
-                                  {date}
+                                  {
+                                    date==="15-07-2025"?(
+                                    <>
+                                    <span className="text-sm line-through text-red-400">
+                                    20-06-2025
+                                  </span>
+                                    </>
+                                    ):(null)
+                                  }
+                                  <p>
+                                    {date}
+                                  </p>
                                 </span>
                               )}
                             </div>
