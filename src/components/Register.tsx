@@ -32,7 +32,7 @@ export default function FeesPage() {
                     colSpan={2}
                     className="bg-gradient-to-r from-blue-800 to-blue-700 text-white p-4 text-center border-l border-blue-400"
                   >
-                    Early Bird (till <span className="text-red-500 line-through">15.06.2025</span> <span>30.06.2035</span>)
+                    Early Bird (till <span className="text-red-500 line-through">15.06.2025</span> <span>30.06.2025</span>)
                   </th>
                   <th
                     colSpan={2}
@@ -93,7 +93,7 @@ export default function FeesPage() {
                     colSpan={2}
                     className="bg-gradient-to-r from-blue-800 to-blue-700 text-white p-4 text-center border-l border-blue-400"
                   >
-                     Early Bird (till <span className="text-red-500 line-through">15.06.2025</span> <span>30.06.2035</span>)
+                     Early Bird (till <span className="text-red-500 line-through">15.06.2025</span> <span>30.06.2025</span>)
                   </th>
                   <th
                     colSpan={2}
@@ -155,7 +155,7 @@ export default function FeesPage() {
             >
               <h3 className="font-bold text-blue-800 mb-2">{row[0]}</h3>
               <div className="mb-3">
-                <h4 className="font-semibold text-blue-700 mb-1"> Early Bird (till <span className="text-red-500 line-through">15.06.2025</span> <span>30.06.2035</span>)</h4>
+                <h4 className="font-semibold text-blue-700 mb-1"> Early Bird (till <span className="text-red-500 line-through">15.06.2025</span> <span>30.06.2025</span>)</h4>
                 <div className="grid grid-cols-2 gap-2 pl-2">
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600">IEEE Member:</span>
@@ -193,7 +193,7 @@ export default function FeesPage() {
             >
               <h3 className="font-bold text-blue-800 mb-2">{row[0]}</h3>
               <div className="mb-3">
-                <h4 className="font-semibold text-blue-700 mb-1"> Early Bird (till <span className="text-red-500 line-through">15.06.2025</span> <span>30.06.2035</span>)</h4>
+                <h4 className="font-semibold text-blue-700 mb-1"> Early Bird (till <span className="text-red-500 line-through">15.06.2025</span> <span>30.06.2025</span>)</h4>
                 <div className="grid grid-cols-2 gap-2 pl-2">
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600">IEEE Member:</span>
