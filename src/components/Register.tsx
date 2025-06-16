@@ -239,6 +239,10 @@ export default function FeesPage() {
             <span>Extra Page charges will be applicable beyond 6 pages (up to 2 additional pages). The extra page charge: ₹1200/page (for Indian Authors) and $25/page (for Foreign Authors)</span>
           </li>
           <li className="flex items-start">
+            <span className="mr-2 text-red-600">•</span>
+            <span className="font-bold text-red-600 ">Registration fees, once paid, is non-refundable.</span>
+          </li>
+          <li className="flex items-start">
             <span className="mr-2">•</span>
             <span>Final Registration Deadline: 15.07.2025</span>
           </li>
