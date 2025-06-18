@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function AnnouncementBanner() {
   const [visible, setVisible] = useState(true);
@@ -75,10 +76,9 @@ export default function AnnouncementBanner() {
         }}
       >
         <p className="text-yellow-300 font-extrabold text-2xl mb-2 tracking-wide animate-pulse">
-          Phase 1 Acceptance Results Declared!
-        </p>
-        <p className="text-cyan-100 text-lg">
-          🚀 Please Check Your CMT Portal.
+          <Link href="https://forms.gle/JYEYiGLaeW2nwgF47" className="hover:underline">
+            Click here to Register!
+          </Link>
         </p>
       </motion.div>
     </motion.div>
