@@ -10,7 +10,7 @@ export default function FeesPage() {
       "IEEE Member",
       "Non-IEEE Member",
     ],
-    ["Industry person", "14,000", "15,000", "16,000", "17,000"],
+    ["Industry/other person", "14,000", "15,000", "16,000", "17,000"],
     ["Academia", "12,000", "13,000", "14,000", "15,000"],
     ["Student", "7,500", "8,500", "8,500", "9,500"],
   ];
@@ -23,7 +23,7 @@ export default function FeesPage() {
       "IEEE Member",
       "Non-IEEE Member",
     ],
-    ["Industry person", "220", "240", "250", "260"],
+    ["Industry/other person", "220", "240", "250", "260"],
     ["Academia", "200", "220", "230", "240"],
     ["Student", "150", "170", "170", "190"],
   ];
@@ -334,6 +334,12 @@ export default function FeesPage() {
             </span>
           </li>
           <li className="flex items-start">
+            <span className="mr-2 text-red-600">•</span>
+            <span className="font-bold text-red-600 ">
+              All registration fees are inclusive of 18% GST
+            </span>
+          </li>
+          <li className="flex items-start">
             <span className="mr-2">•</span>
             <span>
               Extra Page charges will be applicable beyond 6 pages (up to 2
@@ -344,7 +350,7 @@ export default function FeesPage() {
           <li className="flex items-start">
             <span className="mr-2 text-red-600">•</span>
             <span className="font-bold text-red-600 ">
-              Registration fees, once paid, is non-refundable.
+              Registration fees, once paid, is non-refundable.
             </span>
           </li>
           <li className="flex items-start">
