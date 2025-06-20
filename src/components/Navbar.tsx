@@ -46,6 +46,10 @@ const navigationItems: NavItem[] = [
         title: "Special Sessions",
         href: "/callforpapers",
       },
+      {
+        title: "Camera Ready Instructions",
+        href: "/camReady",
+      }
     ],
   },
   {
