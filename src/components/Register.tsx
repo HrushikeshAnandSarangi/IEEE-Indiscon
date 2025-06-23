@@ -353,6 +353,25 @@ export default function FeesPage() {
               Registration fees, once paid, is non-refundable.
             </span>
           </li>
+            <li className="flex items-start">
+            <span className="mr-2">•</span>
+            <span>
+              Attendees who wish to register but do not have a paper can register at the non-author rate of  Rs 3500/  USD 70 (including GST).
+            </span>
+          </li>
+           <li className="flex items-start">
+            <span className="mr-2">•</span>
+            <span>
+              Author registration  fee includes- Registration kit, conference Lunch and  Banquet Dinner.
+            </span>
+          </li>
+             <li className="flex items-start">
+            <span className="mr-2">•</span>
+            <span>
+              Rs. 2500 (including GST) will be charged per accompanying person.
+            </span>
+          </li>
+          
           <li className="flex items-start">
             <span className="mr-2">•</span>
             <span>Final Registration Deadline: 15.07.2025</span>
