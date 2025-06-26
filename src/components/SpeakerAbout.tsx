@@ -49,7 +49,7 @@ const SpeakerAbout = ({ speaker }: { speaker: SpeakerType }) => {
                       Title of Talk:
                     </h2>
                     <p className="text-lg text-gray-800 leading-relaxed">
-                      "{speaker.title}"
+                      &quot;{speaker.title}&quot;;
                     </p>
                   </div>
                 )}
