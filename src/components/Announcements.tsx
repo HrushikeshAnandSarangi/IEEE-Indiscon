@@ -3,7 +3,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, ReactNode } from "react";
 import ImageSlider from "./OurPartnersSlider";
-import ImageSliderTech from "./OurTechSponsor";
 
 interface AnimatedSectionProps {
   children: ReactNode;
