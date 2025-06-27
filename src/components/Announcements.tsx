@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, ReactNode } from "react";
 import ImageSlider from "./OurPartnersSlider";
-import ImageSliderTech from "./OurTechSponsor";
+// import ImageSliderTech from "./OurTechSponsor";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -41,7 +41,7 @@ export default function Announcements() {
           
           <ImageSlider />
           <div className="h-4"></div>
-          <ImageSliderTech/>
+          {/* <ImageSliderTech/> */}
         </AnimatedSection>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           <div className="space-y-6 overflow-y-auto h-[150vh] bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
