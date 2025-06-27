@@ -41,7 +41,6 @@ export default function Announcements() {
           
           <ImageSlider />
           <div className="h-4"></div>
-          <ImageSliderTech/>
         </AnimatedSection>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           <div className="space-y-6 overflow-y-auto h-[150vh] bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
