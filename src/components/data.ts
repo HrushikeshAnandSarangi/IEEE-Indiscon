@@ -534,6 +534,12 @@ export const otherCommittees: Committee[] = [
         "name": "Prof. Anwesha Sengupta",
         "role": "EE Department, NIT Rourkela",
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwVRtoCiNAgwhKf9SKWwmFud7-RmUvKVktA&s"
+      },
+      {
+        "id":95,
+        "name":"Prof. Saptarshi Chaterjee",
+        "role":"ECE Department, NIT Rourkela",
+        "imageUrl":"/SaptarshiChaterjee.jpeg"
       }
     ]
   },

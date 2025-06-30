@@ -371,6 +371,12 @@ export default function FeesPage() {
               Rs. 2500 (including GST) will be charged per accompanying person.
             </span>
           </li>
+             <li className="flex items-start">
+            <span className="mr-2">•</span>
+            <span>
+             Attendees who wish to register but do not have a paper /co-author of any registered article can register at the non-author rate of Rs 3500/ USD 70 (including GST).
+            </span>
+          </li>
           
           <li className="flex items-start">
             <span className="mr-2">•</span>
