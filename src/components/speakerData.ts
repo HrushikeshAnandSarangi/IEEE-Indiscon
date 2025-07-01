@@ -1,6 +1,7 @@
 export type SpeakerType = {
   id: string;
   name: string;
+  ieeeAffil?:string;
   designation?: string;
   university?: string;
   bio: string;
@@ -15,6 +16,7 @@ export const speakers: SpeakerType[] = [
     designation:"Director of Doctor of Engineering.",
     university:"Johns Hopkins University",
     name: "Dr.Ashutosh Dutta",
+    ieeeAffil:"IEEE Fellow",
     bio: "Ashutosh Dutta is Chief 5G Strategist and APL Fellow at Johns Hopkins University’s Applied Physics Labs, USA. He serves as the director of Doctor of Engineering at Johns Hopkins University. In the past, he served as the chair of ECE department of Engineering for Professionals at JHU, Director of Technology Security at AT&T, CTO of Wireless at NIKSUN, Senior Scientist in Telcordia Research, Director of Central Research Facility at Columbia University, and Computer Engineer with TATA Motors. He has authored more than 110 technical papers, one book published by John and Wiley, and 5 book chapters, and has 31 issued patents. Ashutosh is recipient of IEEE MGA’s 2009 Leadership Award, IEEE-USA’s 2010 Professional Leadership Award, 2022 IEEE-USA George F. McClure Citation of Honor and 2022 IEEE North American Region Exceptional Service Award. Ashutosh served as Member-At-Large for IEEE Communications Society for 2020-2025 and Distinguished Lecturer from 2018-2021. Ashutosh was inducted into Internet IPV6 Hall of Famer in 2024. He co-founded the IEEE STEM conference (ISEC) in 2011 and has served its Co-Chair since then. Ashutosh currently serves as the Chair for IEEE Industry Connection’s O-RAN activities and 6G. As the Founding Co-Chair of IEEE Future Networks he led technology roadmap, publications, standardization, testbed, education, industry engagement, conferences and workshops in the area of 5G and 6G, while keeping a focus on humanitarian needs. Ashutosh is a Distinguished Alumnus of NIT Rourkela with a BS in Electrical Engineering, MS in Computer Science from NJIT, and a PhD in EE from Columbia University. Ashutosh is an IEEE Fellow and an ACM Distinguished member.",
     imageUrl: "/Ashutosh.jpg",
     title:"5G/6G Security and AI/ML – Opportunities and Challenges",
@@ -24,8 +26,8 @@ export const speakers: SpeakerType[] = [
   {
     id: "2",
     name: "Dr. Balakrishna Islavath",
-    designation:"Senate Member",
-    university:"University of Madras and Anna University",
+    designation:"Scientist",
+    university:" R&D Redearch Centre, Chennai, MeitY, GoI",
     bio: `Dr. I. Balakrishna is a distinguished academic and research professional, recognized for his extensive contributions to the fields of RF, Microwave, and mm-Wave technologies.Recently appointed as a Senate Member of the University of Madras and Anna University by the Hon'ble Governor of Tamil Nadu, Shri RN Ravi, Dr Balakrishna serves as an Executive Committee Member at the Center for Internet of Things (C-IoT) at Anna University,furthering innovative technological advancements. His impressive career includes leadership roles as Chairman and Board of Studies(BOS)member across prestigious institutions such as IITs, NITs, and various renownedengineeringcolleges. With a rich history as a Visiting Scientist at esteemed institutions like MIT, GeorgiaTech, and IISc Bangalore, he previously excelled as Chief Manager and Headof R&DatReliance Jio Pvt. Ltd, Mumbai. Currently, he is a dedicated Scientist at the R&D Research Centre, Chennai, Ministryof Electronics & Information Technology(MeitY), GoI. With over 15 years of hands-onexperience in R&D, he has been instrumental in executing critical national defenseprojects,contributing to the successful test flights of missiles, and solving complex electromagneticchallenges, including antenna systems for naval ships, satellites, and stealthtechnologyaircraft.His collaborative spirit has led to significant contributions to the "IndigenousDevelopment of End-to- End 5G Test Bed," a project funded by the Department ofTelecommunications (DoT), which resulted in India's first fully functional MIMOandmassive MIMO antenna systems demonstrated to the Hon’ble Prime Minister. His dedication to technology advancement is evident in his active contributionstoindigenous 5G/6G projects and future-oriented tech programs in India. His current researchinterests include a wide array of cutting-edge topics, such as:
  Advanced Communication Systems: 5G/6G solutions, Massive MIMO, andSmartMedical Applications, Spectrum Studies, RF SoC, Intelligent ReflectingSurfaces,and Jammer & Surveillance Systems
  IoT and Smart Applications: Innovations in Smart Agriculture, Smart Cities,Health Monitoring Wearables, and IoT-integrated Smart Homes
@@ -41,7 +43,8 @@ He is highly involved in capacity building, delivering impactful lectures, works
     id: "3",
     designation:"Prof. of Electrical and Computer Engg.",
     university:"Northeastern University(NU)",
-    name: "Josep Miquel Jornet",
+    name: "Prof.Josep Miquel Jornet",
+    ieeeAffil:"IEEE Fellow",
     bio: `Josep Miquel Jornet is Professor of Electrical and Computer Engineering at Northeastern University (NU), the Associate Dean of Research of the College of Engineering (COE), the Associate Director of the Institute for the Wireless Internet of Things (WIoT), and the Director of the Ultrabroadband Nanonetworking (UN) Laboratory. He received his Ph.D. in Electrical and Computer Engineering from the Georgia Institute of Technology, Atlanta, GA, in August 2013. His research interests are in terahertz communication networks, wireless nano-bio-communication networks, and the Internet of Nano-Things. He has co-authored more than 250 peer-reviewed scientific publications in these areas, including one book and five US patents. His work has received over 20,000 citations (h-index of 65 as of May 2025). He is serving as the lead PI on multiple grants from U.S. federal agencies, including the National Science Foundation, the Air Force Office of Scientific Research, and the Air Force Research Laboratory, and industry. He is the recipient of multiple awards, including the NSF CAREER Award in 2019, the 2022 IEEE ComSoc RCC Early Achievement Award, and the 2022 IEEE Wireless Communications Technical Committee Outstanding Young Researcher Award, among others, as well as eight best paper awards. He is a Fellow of the IEEE (Class of 2024) and served as an IEEE ComSoc Distinguished Lecturer (Class of 2022-2024). He is also the editor-in-chief of the Elsevier Nano Communication Networks journal and Editor for IEEE Transactions on Communications, IEEE Transactions on Molecular, Biological and Multi-scale Communications, and Nature Scientific Reports.`,
     imageUrl: "/JosepMiquelJorne.jpg",
     about:`The need for ever-increasing bandwidth is driving the research community to explore new spectrum frontiers. The sub-terahertz and terahertz bands (0.1–10 THz) offer a vast swath of untapped spectrum that could be used for many innovative communication and sensing applications. Additionally, the shorter wavelengths and the non-negligible photon energy of terahertz radiation open the door to innovative applications across scales. Over the last decade, remarkable progress in electronic, photonic, and plasmonic technologies has narrowed the terahertz technology gap. Moreover, in-depth studies on terahertz signal propagation, combining physics-based and data-driven approaches, have dispelled misconceptions surrounding the terahertz channel. However, several communication roadblocks must be overcome to unleash the spectrum above 100 GHz. This talk will follow a bottom-up approach to highlight innovative solutions and open challenges for terahertz communications and sensing systems on the ground, in the air, and in space. First, we delve into wavefront engineering for near-field THz links, showcasing novel beam types, including self-healing Bessel and curving Airy beams and discuss the unique opportunities these beams offer for short-range, high-capacity networks. Second, we demonstrate the advantageous role of THz frequencies in satellite communication networks, highlighting their potential for high-speed access links, and the upcoming, first-of-its-kind, TeraLink experimental mission.`,
@@ -49,7 +52,7 @@ He is highly involved in capacity building, delivering impactful lectures, works
   },
   {
     id: "4",
-    name: "Kumar Vijay Mishra",
+    name: "Dr.Kumar Vijay Mishra",
     designation:"Senior Fellow ",
     university:"United States DEVCOM Army Research Laboratory",
     bio: `Kumar Vijay Mishra is a prominent figure in the field of electrical engineering, with a focus on wireless communication and signal processing. He has made significant contributions to the development of advanced communication systems, including 5G and beyond. Dr. Mishra has published numerous research papers in top-tier journals and conferences, and holds several patents in the area of wireless technologies. He is actively involved in various professional organizations, and has served as a reviewer for leading journals in his field. His work is characterized by a strong emphasis on innovation and practical applications, making him a sought-after speaker at industry events and academic conferences.Kumar Vijay Mishra (S’08-M’15-SM’18) obtained a Ph.D. in electrical engineering and M.S. in mathematics from The University of Iowa in 2015, and M.S. in electrical engineering from Colorado State University in 2012, while working on NASA’s Global Precipitation Mission Ground Validation (GPM-GV) weather radars. He received his B. Tech. summa cum laude (Gold Medal, Honors) in electronics and communication engineering from the National Institute of Technology, Hamirpur (NITH), India in 2003. He is a Senior Fellow at the United States DEVCOM Army Research Laboratory; Research Scientist at the Institute for Systems Research, The University of Maryland, College Park under the ARL-ArtIAMAS program; Technical Adviser to Singapore-based automotive radar start-up Hertzwell and Boston-based imaging radar startup Aura Intelligent Systems; and honorary Research Fellow at SnT - Interdisciplinary Centre for Security, Reliability and Trust, University of Luxembourg. Previously, he had research appointments at the Electronics and Radar Development Establishment (LRDE), Defence Research and Development Organisation (DRDO) Bengaluru; IIHR - Hydroscience & Engineering, Iowa City, IA; Mitsubishi Electric Research Labs, Cambridge, MA; Qualcomm, San Jose; and Technion - Israel Institute of Technology.
@@ -79,17 +82,132 @@ imageUrl: "/KumarVijayMishra.jpg"
   },
   {
     id: "6",
-    name: "Shuvra S. Bhattacharya",
+    name: "Prof. Shuvra S. Bhattacharya",
     designation:"Dept. of Electrical and Computer Engg.",
     university:"University of Maryland, College Park",
-    bio: `Shuvra S. Bhattacharyya is a Professor in the Department of Computer Science at the University of Maryland, College Park. He is also a co-director of the Maryland Cybersecurity Center (MC2) and the Maryland Robotics Center (MRC). His research interests include computer architecture, hardware-software co-design, and cybersecurity. He has published extensively in these areas and has received several awards for his work, including the NSF CAREER Award and the IEEE TCCA Young Architect Award.`,
+    bio: `
+Shuvra S. Bhattacharyya
+Department of Electrical and Computer Engineering
+2311 A. V. Williams Bldg.
+University of Maryland
+College Park, MD 20742, USA
+Phone: (301)405-3638
+Email:
+ssb@umd.edu
+, Web:
+http://www.ece.umd.edu/
+~
+ssb/
+March 5, 2025
+1 Research Interests
+Signal processing, computer vision, cyber-physical syste
+ms, embedded systems, machine learning,
+wireless communication, and wireless sensor sensor networ
+ks.
+2 Education
+•
+Ph.D. in Electrical Engineering and Computer Sciences, Uni
+versity of California at Berkeley,
+1994
+•
+M.S. in Electrical Engineering and Computer Sciences, Univ
+ersity of California at Berkeley,
+1991
+•
+B.S. in Electrical and Computer Engineering, and Computer S
+cience (double major) Univer-
+sity of Wisconsin at Madison, 1987
+3 Academic Positions
+•
+2006–present: Professor, Dept. of Electrical and Computer
+Engineering, University of Mary-
+land, College Park, MD (UMD).
+•
+1997–present: Joint Faculty Appointment, Institute for Ad
+vanced Computer Studies (UMI-
+ACS), UMD.
+•
+2021–2024: Chair of Excellence in Design Methodologies and
+Tools (part-time), Institut Na-
+tional Des Sciences Appliqu ́ees (INSA), Rennes, France.
+•
+2019–2020: Chaire Internationale de Recherche (part-time
+), INSA/INRIA, Rennes, France.
+•
+2015–2018: Visiting Professor (part-time), Department of
+Pervasive Computing, Tampere
+University of Technology, Finland, as part of the Finland Di
+stinguished Professor Programme
+(FiDiPro).
+•
+2001–2006: Associate Professor, Dept. of Electrical and Co
+mputer Engineering, UMD.
+•
+1997–2001: Assistant Professor, Dept. of Electrical and Co
+mputer Engineering, UMD.
+•
+1992–1994: Research Assistant, Electronics Research Labo
+ratory, University of California,
+Berkeley, CA.
+•
+1987–1991: Research Assistant, Electronics Research Labo
+ratory, University of California,
+Berkeley, CA.
+1
+resume.pdf
+4 Other Positions
+•
+2013–2022: Co Editor in Chief, Journal of Signal Processing
+Systems, Springer Science +
+Business Media, LLC, New York, NY.
+•
+2021, 2022: Autonomy Technology Research Center (ATRC) Men
+tor, Wright State University,
+Dayton, OH.
+•
+2013–2015: President and Chief Technologist, Streamlined
+Embedded Technologies, LLC,
+Ellicott City, MD.
+•
+2009: Visiting Faculty Research Program, Air Force Researc
+h Laboratory (AFRL), Rome,
+NY.
+•
+1994–1997: Researcher, Semiconductor Research Laborator
+y, Hitachi America, San Jose, CA.
+•
+1991–1992: Compiler Developer, Kuck & Associates, Champai
+gn, IL.
+5 Honors
+•
+FiDiPro Professor, Finland Distinguished Professor Progr
+amme, TEKES, The Finnish Fund-
+ing Agency for Innovation (Finland, 2015–2018).
+•
+Jimmy Lin Award for Entrepreneurship, University of Maryla
+nd (2012).
+•
+Fellow of the Institute of Electrical and Electronics Engin
+eers (IEEE) “for contributions to
+design optimization for signal processing” (2011).
+•
+Invention of the Year Finalist, University of Maryland (201
+1).
+•
+Fulbright Specialist (Austria, 2009 & 2015 and Germany, 200
+5).
+•
+Nokia Distinguished Lecturer (Finland, 2006).
+•
+National Science Foundation CAREER Award (1998)`,
     imageUrl: "/SurvaSBhattacharya.jpg",
     title: "Software Synthesis from Dataflow Schedule Graphs",
     about: `In dataflow-based design processes for signal processing and machine learning (SPML), scheduling is a critical task that affects practical measures of performance, including latency, throughput, energy consumption, memory requirements, and processor utilization. Dataflow schedule graphs (DSGs) provide a formal abstraction for representing schedules in dataflow-based design processes. The DSG abstraction allows designers to model a schedule as a separate dataflow graph, thereby providing a formal, abstract (platform and language-independent) representation for the schedule. In this presentation, we review the DSG representation, and introduce a design methodology for embedded SPML systems that is based on explicit specifications of application graphs and schedules as cooperating dataflow models. We also develop new software synthesis techniques for automatically deriving efficient implementations from these coupled application and schedule models. We demonstrate the proposed methodology and software synthesis techniques through various experiments, including an example involving real time detection of people and vehicles using acoustic and seismic sensors.`
   },
   {
     id: "7",
-    name:"Tushar Vrind",
+    name:"Dr.Tushar Vrind",
+    ieeeAffil:"IEEE Senior Member, Past Executive Member of IEEE ComSoc Bangalore chapter",
     designation:"Senior Technical Director",
     university:"Samsung Semiconductor India R&D (SSIR)",
     bio:`Tushar Vrind is a Senior Technical Director at Samsung Semiconductor India R&D (SSIR). He is a member of the Technical Ladder and a past chair of the Communication & Connectivity Center of Excellence at SSIR. He has over 25 years of professional experience in wireless communication (2G to 5G) and the embedded domain, particularly with the Exynos System on Chip (SoC) at Samsung Electronics. He has over 50 applied patents and more than 30 granted patents worldwide in the areas of embedded systems and wireless protocols. He has co-authored over 40 technical contributions, papers, and journal articles with 3GPP and IEEE. Tushar is a notable innovator, intrapreneur, and technology evangelist at SSIR. He is also a Senior Member of IEEE and a past Executive Committee member of the IEEE ComSoc Bangalore Chapter. He has contributed as a TPC member at several IEEE conferences. His research interests include wireless networking, cellular communication, medium access protocols, resource allocation protocols, applications of machine and deep learning, and real-time operating systems. He holds a bachelor's degree in Computer Engineering from Birla Institute of Technology, Mesra, India, and a Master of Science (Research) in Wireless Communication and Networks from the International Institute of Information Technology, Bangalore, India. He also participated in Stanford Ignite, a certification program in Entrepreneurship and Innovation from the Graduate School of Business, Stanford University.`,
@@ -99,7 +217,7 @@ imageUrl: "/KumarVijayMishra.jpg"
   },
   {
     id: "8",
-    name:"Ujjwal Maulik",
+    name:"Prof.Ujjwal Maulik",
     designation:"Professor",
     university:"Dept. of Comp. Sc. and Engg., Jadavpur University",
     bio:`Dr. Ujjwal Maulik is a Professor in the Dept. of Comp. Sc. and Engg., Jadavpur University since 2004. He was also the former Head of the same Department. He also held the position of the Principal in charge and the Head of the Dept. of Comp. Sc. and Engg., Kalayni Govt. Engg. College. Dr. Maulik has worked in many universities and research laboratories around the world as visiting Professor/ Scientist including Los Alamos National Lab., USA in 1997, Univ. of New South Wales, Australia in 1999, Univ. of Texas at Arlington, USA in 2001, Univ. of Maryland at Baltimore County, USA in 2004,  Fraunhofer Institute for Autonome Intelligent Systems, St. Augustin, Germany in 2005, Tsinghua Univ., China in 2007, Sapienza Univ., Rome, Italy in 2008, Univ. of Heidelberg, Germany in 2009, German Cancer Research Center (DKFZ), Germany in 2010, 2011 and 2012,  Grenoble INP, France in 2010, 2013 and 2016, University of Warsaw in 2013 and 2019, University of Padova, Italy in 2014 and 2016, Corvinus University, Budapest, Hungary in 2015 and 2016,  University of Ljubljana, Slovenia in 2015 and 2017, International Center for Theoretical Physics (ICTP), Trieste, Italy in 2014, 2017 and 2018. He is the recipient of Alexander von Humboldt Fellowship during 2010, 2011 and 2012 and Senior Associate of ICTP, Italy during 2012-2018 and Fulbright Fellowship in 2024-2025. He is the Fellow of  Indian National Academy of Engineers (INAE), India, National Academy of  Science India (NASI), International Association for Pattern Recognition (IAPR),  USA, The Institute of Electrical and Electronics Engineers (IEEE), USA and Asia-Pacific Artificial Intelligence Association (AAIA), Hongkong. He is also the Distinguish Member of  the ACM. He is a Distinguish Speaker of IEEE as well as  ACM. His research interest include  Machine Learning, Pattern Analysis,  Data Science, Bioinformatics, Multi-objective Optimization, Social Networking, IoT and Autonomous Car. In these areas he has published ten books, more than four hundred papers, mentoring several start-ups, filed several patents and  already guided twenty five doctoral students. His other interest include mentoring young students, traveling extensively around the globe, outdoor Sports and  Music. `,
@@ -114,7 +232,7 @@ Finally we will also discuss how Data Science and ML together is changing the re
   },
   {
     id: "9",
-    name:"David W. Matolack",    
+    name:"Prof.David W. Matolack",    
     designation:"Professor",
     university:"University of South Carolina",
     bio:"David W Matolak received the BS degree from The Pennsylvania State University, MS degree from The University of Massachusetts, and PhD degree from The University of Virginia, all in electrical engineering. He has over 25 years’ experience in communication system research, development, and deployment, with industry, government institutions, and academia, including AT&T Bell Labs, L3 Communication Systems, MITRE, and Lockheed Martin. He has over 250 refereed publications and ten patents. He was a professor at Ohio University (1999-2012), and since 2012 has been a professor at the University of South Carolina. He has been Associate Editor for several IEEE journals, is currently the chair of the IEEE VTS Propagation Committee, and has delivered several dozen invited presentations at a variety of international venues. His research interests are radio channel modeling, communication techniques for non-stationary fading channels, and secure and covert communications. Prof. Matolak is a Fellow of the IEEE, a member of standards groups in RTCA and ITU, and a member of Eta Kappa Nu, Sigma Xi, Tau Beta Pi, URSI, ASEE, AAAS, and AIAA.",
@@ -125,6 +243,7 @@ Finally we will also discuss how Data Science and ML together is changing the re
   {
     id:"10",
     name:"Prof. S.V. Kulkarni",
+    ieeeAffil:"IEEE Fellow",
     designation:"Prof. at Department of Electrical Engg.",
     university:"Indian Institute of Technology (IIT) Bombay",
     bio:`Dr. S. V. Kulkarni is a Professor in the Department of Electrical Engineering at IIT Bombay. He was INAE (Indian National Academy of Engineering) Chair Professor in the Department (April 2018 – March 2020).  He is a Fellow of IEEE and INAE. He is also an IEEE PES Distinguished Lecturer. He was Editor of IEEE Transactions on Power Delivery and IEEE Power Engineering Letters (2012-2019). He worked at Crompton Greaves Limited (1990-2001) and specialized in the design and development of transformers up to 400 kV class. He was a recipient of the Young Engineer Award conferred by INAE in 2000 for his contributions to ‘Electromagnetic Field Computations and High Voltage Insulation Design in Transformers’. He was also honoured with the Career Award for Young Teachers from All India Council for Technical Education in 2001. He received Best Paper Awards in international conferences on transformers held in 2002 and 2006. 

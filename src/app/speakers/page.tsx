@@ -11,9 +11,9 @@ export default function SpeakersPage() {
   const [selectedSpeaker, setSelectedSpeaker] = useState<SpeakerType | null>(null);
   
   const handleSpeakerClick = (speaker: SpeakerType) => {
-    if (speaker.name !== "Shuvra S. Bhattacharya") {
+    
       setSelectedSpeaker(speaker);
-    }
+    
   };
 
   const handleBackClick = () => {
@@ -58,6 +58,7 @@ export default function SpeakersPage() {
                   <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
                     {selectedSpeaker.name.trim()}
                   </h1>
+                  
                   
                   {selectedSpeaker.designation && (
                     <p className="text-lg text-indigo-600 font-medium mb-4">

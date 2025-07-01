@@ -15,6 +15,9 @@ const SpeakerCard = ({ speaker }: { speaker: SpeakerType }) => {
         />
       </div>
       <h2 className="text-xl font-bold text-gray-900 text-center">{speaker.name}</h2>
+      {speaker.ieeeAffil && (
+        <p className="text-indigo-600 text-[15px] font-medium text-center mt-1.5">{speaker.ieeeAffil}</p>
+      )}
       {speaker.designation && (
         <p className="text-indigo-600 text-[15px] font-medium text-center mt-1.5">{speaker.designation}</p>
       )}
