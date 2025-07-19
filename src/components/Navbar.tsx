@@ -49,6 +49,10 @@ const navigationItems: NavItem[] = [
       {
         title: "Camera Ready Instructions",
         href: "/camReady",
+      },
+      {
+        title: "Paper Submission",
+        href: "/tentativeSchedule",
       }
     ],
   },

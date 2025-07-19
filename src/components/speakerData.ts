@@ -273,7 +273,7 @@ For more details, see: http://www.ee.iitb.ac.in/wiki/faculty:svk
     id:"12",
     name:"Dr. Alok Ranjan",
     ieeeAffil:"IEEE Senior Member",
-    designation:"AI/Research Architect",
+    designation:"Senior AI/Research Architect",
     university:"Bosch Global Software Technologies Pvt. Ltd.",
     bio:`Dr. Alok Ranjan is a demonstrated researcher with more than 13+ years of experiences in the area of AIoT, Smart Mobility, Sensing and mobile systems, Wireless communication & data driven ecosystem. He is passionate to build systems around interdisciplinary research & business domains. At present, he is leading research in Edge AI (Edge Intelligence), on device AI for both mobility and non-mobility domains at BGSW. 
 
@@ -292,6 +292,14 @@ Alok received his Ph.D. from NIT Rourkela & has been a Post-Doctoral Researcher 
     university:"Indian Statistical Institute, Kolkata",
     bio:`Prof. Sanghamitra Bandyopadhyay did her B Tech, M Tech and Ph. D. in Computer Science from Calcutta University, IIT Kharagpur and Indian Statistical Institute respectively. She then joined the Indian Statistical Institute as a faculty member, and became the Director in 2015. Since 2020 she is continuing in her second tenure as the Director of the Institute. Her research interests include computational biology, soft and evolutionary computation, artificial intelligence and machine learning.  She has authored/co-authored several books and numerous articles in journals, book chapters, and conference proceedings and has a citation h-index of 64. Prof. Bandyopadhyay has worked in many Institutes and Universities worldwide. She is the recipient of several awards including the Shanti Swarup Bhatnagar Prize in Engineering Science, TWAS Prize, Infosys Prize, JC Bose Fellowship, Swarnajayanti fellowship, INAE Silver Jubilee award, INAE Woman Engineer of the Year award (academia), IIT Kharagpur Distinguished Alumni Award, Humboldt Fellowship from Germany, Senior Associateship of ICTP, Italy, young engineer/scientist awards from INSA, INAE and ISCA,  and Dr. Shanker Dayal Sharma Gold Medal and Institute Silver from IIT, Kharagpur, India. She is a Fellow of all the National Science Academies and the Engineering Academy of India, IEEE, The World Academy of Sciences (TWAS), and International Association for Pattern Recognition (IAPR). She serves as a member of the Science, Technology and Innovation Advisory Council of the Prime Minister of India (PM-STIAC). In 2022, she was conferred the Padma Shri award of the Government of India. `,
     imageUrl: "/Bandyopadhyay.jpg",
+  },
+  {
+    id: "14",
+    name:"Kapil Bhattad",
+    designation:"Sr. Director, Engineering",
+    university:"Qualcomm India Pvt. Ltd.",
+    bio:"Kapil Bhattad received his B. Tech degree in Electrical Engineering from IIT Madras in 2002 and a Ph.D. degree in Electrical Engineering from Texas A&amp;M University in 2007. He has been at Qualcomm Wireless R&amp;D since then in San Diego from 2007 to 2011 and in Bangalore from 2011 onwards. He has contributed extensively to design, standardization, and commercialization of wireless communication technologies and chipsets covering 3G,4G,5G, IoT, and satellite communication systems. He has more than 250 patent applications in these areas.  He currently leads the Bluetooth and UWB modem systems team in India.",
+    imageUrl: "/Kapil.png",
   }
 
 ];

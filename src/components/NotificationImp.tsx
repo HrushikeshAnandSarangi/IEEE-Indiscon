@@ -76,8 +76,8 @@ export default function AnnouncementBanner() {
         }}
       >
         <p className="text-yellow-300 font-extrabold text-2xl mb-2 tracking-wide animate-pulse">
-          <Link href="https://forms.gle/JYEYiGLaeW2nwgF47" className="hover:underline">
-            Click here to Register!
+          <Link href="/tentativeSchedule" className="hover:underline">
+            Click for Tentative Program Schedule
           </Link>
         </p>
       </motion.div>
