@@ -1,28 +1,28 @@
-"use client"
+"use client";
 
-import { useState, useCallback, memo, useEffect, useRef } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import Image from "next/image"
-import { Menu, X, ChevronDown } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
+import { useState, useCallback, memo, useEffect, useRef } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface NavItem {
-  title: string
-  href: string
-  items?: NavItem[]
+  title: string;
+  href: string;
+  items?: NavItem[];
 }
 
 interface NavItemProps {
-  item: NavItem
-  isActive: boolean
-  onClick: (title: string) => void
-  onNavigate: () => void
+  item: NavItem;
+  isActive: boolean;
+  onClick: (title: string) => void;
+  onNavigate: () => void;
 }
 
 interface MobileNavItemProps {
-  item: NavItem
-  onNavigate: () => void
+  item: NavItem;
+  onNavigate: () => void;
 }
 
 const navigationItems: NavItem[] = [
@@ -53,7 +53,7 @@ const navigationItems: NavItem[] = [
       {
         title: "Tentative Schedule",
         href: "/tentativeSchedule",
-      }
+      },
     ],
   },
   {
@@ -69,84 +69,100 @@ const navigationItems: NavItem[] = [
     href: "/partners",
   },
   {
-    title: "Travelguide",
+    title: "Venue",
     href: "/map",
+    items: [
+      {
+        title: "Travel",
+        href: "/map",
+      },
+      {
+        title: "Accommodation",
+        href: "/accomodationDet",
+      },
+    ],
   },
-]
+];
 
-const NavItem = memo<NavItemProps>(({ item, isActive, onClick, onNavigate }) => {
-  const hasDropdown = Boolean(item.items)
-  const pathname = usePathname()
-  const isCurrentPage = pathname === item.href
+const NavItem = memo<NavItemProps>(
+  ({ item, isActive, onClick, onNavigate }) => {
+    const hasDropdown = Boolean(item.items);
+    const pathname = usePathname();
+    const isCurrentPage = pathname === item.href;
 
-  return (
-    <motion.div
-      className="relative group "
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      transition={{ type: "spring", stiffness: 400, damping: 17 }}
-    >
-      {hasDropdown ? (
-        <button
-          onClick={() => onClick(item.title)}
-          className={`px-4 py-2 text-sm font-medium transition-all duration-300 flex items-center
+    return (
+      <motion.div
+        className="relative group "
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+      >
+        {hasDropdown ? (
+          <button
+            onClick={() => onClick(item.title)}
+            className={`px-4 py-2 text-sm font-medium transition-all duration-300 flex items-center
             ${isActive ? "text-blue-600" : "text-gray-700"} 
             hover:text-blue-600 rounded-full hover:bg-blue-50`}
-          aria-expanded={isActive}
-        >
-          {item.title}
-          <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-300 ${isActive ? "rotate-180" : ""}`} />
-        </button>
-      ) : (
-        <Link
-          href={item.href}
-          onClick={onNavigate}
-          className={`px-4 py-2 text-sm font-medium transition-all duration-300 flex items-center rounded-full
+            aria-expanded={isActive}
+          >
+            {item.title}
+            <ChevronDown
+              className={`ml-1 h-4 w-4 transition-transform duration-300 ${
+                isActive ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+        ) : (
+          <Link
+            href={item.href}
+            onClick={onNavigate}
+            className={`px-4 py-2 text-sm font-medium transition-all duration-300 flex items-center rounded-full
             ${isCurrentPage ? "text-blue-600 bg-blue-50" : "text-gray-700"} 
             hover:text-blue-600 hover:bg-blue-50`}
-        >
-          {item.title}
-        </Link>
-      )}
-
-      <AnimatePresence>
-        {hasDropdown && isActive && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.3 }}
-            className="absolute left-0 mt-2 w-56 bg-white rounded-2xl shadow-lg ring-1 ring-black ring-opacity-5 z-50 overflow-hidden"
           >
-            <div className="py-2">
-              {item.items?.map((subItem) => (
-                <motion.div
-                  key={subItem.title}
-                  whileHover={{ backgroundColor: "#EBF8FF", x: 5 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                >
-                  <Link
-                    href={subItem.href}
-                    onClick={onNavigate}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-600 transition-all duration-300"
-                  >
-                    {subItem.title}
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+            {item.title}
+          </Link>
         )}
-      </AnimatePresence>
-    </motion.div>
-  )
-})
 
-NavItem.displayName = "NavItem"
+        <AnimatePresence>
+          {hasDropdown && isActive && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+              className="absolute left-0 mt-2 w-56 bg-white rounded-2xl shadow-lg ring-1 ring-black ring-opacity-5 z-50 overflow-hidden"
+            >
+              <div className="py-2">
+                {item.items?.map((subItem) => (
+                  <motion.div
+                    key={subItem.title}
+                    whileHover={{ backgroundColor: "#EBF8FF", x: 5 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  >
+                    <Link
+                      href={subItem.href}
+                      onClick={onNavigate}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:text-blue-600 transition-all duration-300"
+                    >
+                      {subItem.title}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
+    );
+  }
+);
+
+NavItem.displayName = "NavItem";
 
 const MobileNavItem = memo<MobileNavItemProps>(({ item, onNavigate }) => {
-  const pathname = usePathname()
-  const isCurrentPage = pathname === item.href
+  const pathname = usePathname();
+  const isCurrentPage = pathname === item.href;
 
   return (
     <motion.div
@@ -184,46 +200,46 @@ const MobileNavItem = memo<MobileNavItemProps>(({ item, onNavigate }) => {
         </div>
       )}
     </motion.div>
-  )
-})
+  );
+});
 
-MobileNavItem.displayName = "MobileNavItem"
+MobileNavItem.displayName = "MobileNavItem";
 
 export default function Navbar() {
-  const [isVisible, setIsVisible] = useState(true)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [activeDropdown, setActiveDropdown] = useState("")
-  const dropdownRef = useRef<HTMLDivElement>(null)
-  const lastScrollY = useRef(0)
+  const [isVisible, setIsVisible] = useState(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState("");
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const lastScrollY = useRef(0);
 
   const handleNavigate = useCallback(() => {
     if (dropdownRef.current) {
-      dropdownRef.current.focus()
+      dropdownRef.current.focus();
     }
-  }, [])
+  }, []);
 
   const handleDropdownClick = useCallback(
     (title: string) => {
-      setActiveDropdown(activeDropdown === title ? "" : title)
+      setActiveDropdown(activeDropdown === title ? "" : title);
     },
-    [activeDropdown],
-  )
+    [activeDropdown]
+  );
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
+      const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-        setIsVisible(false)
+        setIsVisible(false);
       } else if (currentScrollY < lastScrollY.current) {
-        setIsVisible(true)
+        setIsVisible(true);
       }
-      lastScrollY.current = currentScrollY
-    }
+      lastScrollY.current = currentScrollY;
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <motion.nav
@@ -235,9 +251,13 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
-          <Link href="/" onClick={handleNavigate} className="flex-shrink-0 group">
+          <Link
+            href="/"
+            onClick={handleNavigate}
+            className="flex-shrink-0 group"
+          >
             <motion.div
-              initial={{ scale: 2.00 }}
+              initial={{ scale: 2.0 }}
               whileHover={{ scale: 2.05 }}
               whileTap={{ scale: 1.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -297,7 +317,11 @@ export default function Navbar() {
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
             aria-label="Toggle mobile menu"
           >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </motion.button>
         </div>
       </div>
@@ -312,7 +336,11 @@ export default function Navbar() {
           >
             <div className="px-4 pt-2 pb-4 space-y-1">
               {navigationItems.map((item) => (
-                <MobileNavItem key={item.title} item={item} onNavigate={handleNavigate} />
+                <MobileNavItem
+                  key={item.title}
+                  item={item}
+                  onNavigate={handleNavigate}
+                />
               ))}
               <motion.div
                 whileHover={{ scale: 1.02 }}
@@ -333,6 +361,5 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </motion.nav>
-  )
+  );
 }
-
