@@ -218,7 +218,7 @@ const AccommodationInfo = () => {
             
           </div>
         ))}
-        <div className="hidden md:block">
+        <div className="">
         <motion.div
             className="flex justify-center mt-8"
           whileTap={{ scale: 0.95 }}
