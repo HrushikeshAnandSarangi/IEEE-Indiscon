@@ -104,6 +104,7 @@ const VantaGlobe: React.FC = () => {
             suppressHydrationWarning
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            className='flex flex-col  gap-4 items-center justify-center'
           >
             <Link href="/about" passHref>
               <motion.button
@@ -113,6 +114,12 @@ const VantaGlobe: React.FC = () => {
                 Learn More
               </motion.button>
             </Link>
+           <Link
+            href="https://forms.gle/yFPx3wAf53ratSky5"
+            className="px-6 py-3 text-sm font-medium text-white bg-gradient-to-r from-green-500 to-green-600 rounded-full hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            Book Accommodation
+          </Link>
           </motion.div>
       </motion.div>
     </div>

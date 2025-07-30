@@ -69,19 +69,13 @@ const navigationItems: NavItem[] = [
     href: "/partners",
   },
   {
-    title: "Venue",
+    title: "Travel",
     href: "/map",
-    items: [
-      {
-        title: "Travel",
-        href: "/map",
-      },
-      {
-        title: "Accommodation",
-        href: "/accomodationDet",
-      },
-    ],
   },
+  {
+    title:"Accomodation",
+    href:"/accomodationDet",
+  }
 ];
 
 const NavItem = memo<NavItemProps>(
