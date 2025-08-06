@@ -300,6 +300,17 @@ Alok received his Ph.D. from NIT Rourkela & has been a Post-Doctoral Researcher 
     university:"Qualcomm India Pvt. Ltd.",
     bio:"Kapil Bhattad received his B. Tech degree in Electrical Engineering from IIT Madras in 2002 and a Ph.D. degree in Electrical Engineering from Texas A&amp;M University in 2007. He has been at Qualcomm Wireless R&amp;D since then in San Diego from 2007 to 2011 and in Bangalore from 2011 onwards. He has contributed extensively to design, standardization, and commercialization of wireless communication technologies and chipsets covering 3G,4G,5G, IoT, and satellite communication systems. He has more than 250 patent applications in these areas.  He currently leads the Bluetooth and UWB modem systems team in India.",
     imageUrl: "/Kapil.png",
+  },
+  {
+    id:"15",
+    name:"Dr. Amit Kumar Mishra",
+    designation:"Technology & Innovation Manager",
+    university:"RC Fornax,UK",
+    bio:`Amit Kumar Mishra is currently the Technology & Innovation Manager at RC Fornax, UK. Before this, he has had more than 20 years of academic experience in four continents. His areas of work include radar remote sensing and AI for sensing and measurement. He has worked on co-innovation projects with industries from South Africa, Australia, India, Sweden, and the UK. In addition to more than 250 publications, he holds nine patents and is co-owner of two startups. He is also an Adjunct Professor in the University of Cape Town, a Guest Professor in University West (Sweden), and a Visiting Professor in AGH University Kraków.`,
+    imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU1o3rDuAbq0PLG0jfl0lnTvJzGBJwD6T82w&s",
+    title:"Bio-inspired Methods for Sensing & Instrumentation using AI",
+    about:`In this talk, the speaker shall discuss a few bio-inspired methods that his group has been working on. He will also discuss a machine learning-centric sensing method called Application Specific INstrumentation (ASIN) where inexpensive sensors are used with AI to result in functional instruments.
+`
   }
 
 ];
