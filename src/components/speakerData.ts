@@ -311,6 +311,56 @@ Alok received his Ph.D. from NIT Rourkela & has been a Post-Doctoral Researcher 
     title:"Bio-inspired Methods for Sensing & Instrumentation using AI",
     about:`In this talk, the speaker shall discuss a few bio-inspired methods that his group has been working on. He will also discuss a machine learning-centric sensing method called Application Specific INstrumentation (ASIN) where inexpensive sensors are used with AI to result in functional instruments.
 `
-  }
+  },
+  {
+    id:"16",
+    name:"rof. Debabrata Das",
+    designation:"Director",
+    university:"IIIT BANGALORE",
+    bio:`To be Updated`,
+    imageUrl:"/speakers/DebabrataDas.jpeg",
+    title:"To be Updated",
+    about:`To be Updated`
+  },
+  {
+    id:"17",
+    name:"Prof. G. Panda",
+    designation:"Professor and Research Advisor",
+    university:"C. V. Raman Global University, Bhubaneswar",
+    bio:`To be Updated`,
+    imageUrl:"/speakers/GanapatiPanda.jpeg",
+    title:"To be Updated",
+    about:`To be Updated`
+  },
+  {
+    id:"18",
+    name:"Prof. B. Majhi",
+    designation:"Vice Chancellor.jpeg",
+    university:"C. V. Raman Global University, Bhubaneswar ",
+    bio:`To be Updated`,
+    imageUrl:"/speakers/BanshidharMajhi.jpeg",
+    title:"To be Updated",
+    about:`To be Updated`
+  },
+  {
+    id:"19",
+    name:"Prof. B. Subudhhi",
+    designation:"Director",
+    university:" NIT Warangal",
+    bio:`To be Updated`,
+    imageUrl:"/speakers/BidyadharSubudhi.jpg",
+    title:"To be Updated",
+    about:`To be Updated`
+  },
+  {
+    id:"20",
+    name:"Prof. S. K. Patra",
+    designation:"Director",
+    university:" NIT Agartala",
+    bio:`To be Updated`,
+    imageUrl:"/speakers/SaratPatra.jpg",
+    title:"To be Updated",
+    about:`To be Updated`
+  },
 
 ];

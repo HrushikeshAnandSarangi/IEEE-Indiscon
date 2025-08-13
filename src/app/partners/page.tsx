@@ -1,6 +1,7 @@
 import React from 'react'
 import AnimatedGridBackground  from '@/components/animatingBackground'
 import Image from 'next/image'
+import SponsorsSection from '@/components/Sponsors'
 export default function page() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function page() {
         
       </div>
     </div>
+    <SponsorsSection/>
     </>
   )
 }

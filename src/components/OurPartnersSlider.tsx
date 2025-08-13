@@ -23,8 +23,27 @@ const IMAGES = [
     id:4,
     src: "/ieeerklsub.jpg",
     alt: "IEEE Rourkela",
-  }
-
+  },
+  {
+    id:5,
+    src: "/WIE.png",
+    alt: "IEEE WIE",
+  },
+  {
+    id:6,
+    src: "/IEEEStudent.jpg",
+    alt: "IEEE NITR Student Chapter",
+  },
+  {
+    id:7,
+    src: "/IEEEPES.jpg",
+    alt: "IEEE Pes",
+  },
+  {
+    id:8,
+    src: "/JointSociety.jpg",
+    alt: "IEEE Rourkela x IEEE Kolkata",
+  },
   
 ]
 

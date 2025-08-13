@@ -54,6 +54,10 @@ const navigationItems: NavItem[] = [
         title: "Tentative Schedule",
         href: "/tentativeSchedule",
       },
+      {
+        title:"WIE Special Session",
+        href:"/wiespecialsession",
+      }
     ],
   },
   {

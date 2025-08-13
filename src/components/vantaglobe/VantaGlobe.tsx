@@ -90,7 +90,7 @@ const VantaGlobe: React.FC = () => {
     <div className="relative w-screen h-screen " onMouseMove={handleMouseMove}>
       <motion.div ref={containerRef} className="absolute top-0 left-0 w-full h-full" />
       <motion.div
-        className="absolute w-full inset-0 flex flex-col items-center justify-center text-center text-white px-6 bg-[#151515] bg-opacity-40  "
+        className="absolute w-full inset-0 flex flex-col items-center justify-center text-center text-white px-6 bg-[#151515] bg-opacity-40 space-y-5  "
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -114,7 +114,14 @@ const VantaGlobe: React.FC = () => {
                 Learn More
               </motion.button>
             </Link>
-           <Link
+          </motion.div>
+          <motion.div
+            suppressHydrationWarning
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className='flex flex-col  gap-4 items-center justify-center'
+          >
+            <Link
             href="https://forms.gle/yFPx3wAf53ratSky5"
             className="px-6 py-3 text-sm font-medium text-white bg-gradient-to-r from-green-500 to-green-600 rounded-full hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg"
           >
