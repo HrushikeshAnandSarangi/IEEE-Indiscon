@@ -314,7 +314,7 @@ Alok received his Ph.D. from NIT Rourkela & has been a Post-Doctoral Researcher 
   },
   {
     id:"16",
-    name:"rof. Debabrata Das",
+    name:"Prof. Debabrata Das",
     designation:"Director",
     university:"IIIT BANGALORE",
     bio:`To be Updated`,
