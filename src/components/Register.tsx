@@ -380,7 +380,7 @@ export default function FeesPage() {
           <li className="flex items-start">
             <span className="mr-2">•</span>
             <span>
-              Rs. 2500 (including GST) will be charged per accompanying person.
+              Rs. 2500 (including GST) will be charged for other accompanying persons.
             </span>
           </li>
 
