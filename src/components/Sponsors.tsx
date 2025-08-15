@@ -41,6 +41,12 @@ const sponsors: Sponsor[] = [
     logo: "/sponsors/SCUBE.jpg",
     tier: "platinum",
   },
+  {
+    id: 6,
+    name: "IEEE Future Networks",
+    logo: "/IEEE-Futures.jpg",
+    tier: "platinum",
+  },
 ]
 
 export default function SponsorsSection() {

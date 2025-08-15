@@ -21,7 +21,7 @@ const IMAGES = [
   },
   {
     id:4,
-    src: "/WIE.png",
+    src: "/WIE-logo.jpg",
     alt: "WIE",
   }
 
