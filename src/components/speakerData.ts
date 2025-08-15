@@ -335,7 +335,7 @@ Alok received his Ph.D. from NIT Rourkela & has been a Post-Doctoral Researcher 
   {
     id:"18",
     name:"Prof. B. Majhi",
-    designation:"Vice Chancellor.jpeg",
+    designation:"Vice Chancellor",
     university:"C. V. Raman Global University, Bhubaneswar ",
     bio:`To be Updated`,
     imageUrl:"/speakers/BanshidharMajhi.jpeg",

@@ -26,7 +26,7 @@ const IMAGES = [
   },
   {
     id:5,
-    src: "/WIE.png",
+    src: "/WIE-logo.jpg",
     alt: "IEEE WIE",
   },
   {
@@ -43,6 +43,11 @@ const IMAGES = [
     id:8,
     src: "/JointSociety.jpg",
     alt: "IEEE Rourkela x IEEE Kolkata",
+  },
+  {
+    id:8,
+    src: "/ISRO.jpg",
+    alt: "ISRO",
   },
   
 ]
