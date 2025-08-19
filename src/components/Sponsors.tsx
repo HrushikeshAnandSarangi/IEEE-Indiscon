@@ -47,6 +47,18 @@ const sponsors: Sponsor[] = [
     logo: "/IEEE-Futures.jpg",
     tier: "platinum",
   },
+  {
+    id: 7,
+    name: "L & T Construction",
+    logo: "/LandT.jpg",
+    tier: "platinum",
+  },
+  {
+    id: 8,
+    name: "ISRO",
+    logo: "/ISRO.jpg",
+    tier: "platinum",
+  },
 ]
 
 export default function SponsorsSection() {
