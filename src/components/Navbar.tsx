@@ -83,7 +83,7 @@ const navigationItems: NavItem[] = [
     href:"/accomodationDet",
     items: [
       {
-        title: "Accomodation Details for Opted Candidates",
+        title: "Accomodation Details for Opted Participants",
         href: "/accOpt",
       },
       {
