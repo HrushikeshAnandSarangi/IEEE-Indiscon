@@ -225,10 +225,10 @@ const AccommodationInfo = () => {
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
           <Link
-            href="https://forms.gle/yFPx3wAf53ratSky5"
+            href="/accOpt"
             className="px-6 py-3 text-sm font-medium text-white bg-gradient-to-r from-green-500 to-green-600 rounded-full hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg"
           >
-            Book Accommodation
+            Check Your Alloted Accomodation
           </Link>
         </motion.div>
       </div>

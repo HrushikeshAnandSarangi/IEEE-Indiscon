@@ -540,6 +540,12 @@ export const otherCommittees: Committee[] = [
         "name":"Prof. Saptarshi Chaterjee",
         "role":"ECE Department, NIT Rourkela",
         "imageUrl":"/SaptarshiChaterjee.jpeg"
+      },
+      {
+        "id":96,
+        "name":"Atin Mukherjee",
+        "role":"ECE Department, NIT Rourkela",
+        "imageUrl":"/AtinMukherjee2.jpeg"
       }
     ]
   },
