@@ -7,7 +7,7 @@ const Page = () => {
       <AnimatedGridBackground/>
        <div className=" rounded-xl shadow-lg overflow-hidden mb-8 ">
        <iframe
-         src="/Tentative.pdf"
+         src="/FinalSchedule.pdf"
          title="Tentative Schedule PDF"
          className="w-full h-112"
          allowFullScreen

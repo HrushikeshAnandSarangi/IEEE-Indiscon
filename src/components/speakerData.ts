@@ -365,7 +365,7 @@ Alok received his Ph.D. from NIT Rourkela & has been a Post-Doctoral Researcher 
   {
     id:"21",
     name:"Dr. Debiprasad Priyabrata Acharya",
-    designation:"Proffessor",
+    designation:"Professor",
     university:"NIT Rourkela",
     bio:"Dr. Debiprasad Priyabrata Acharya is a Professor in the Department of Electronics and Communication Engineering at NIT Rourkela. With a Ph.D. in VLSI Signal Processing from NIT Rourkela, M.E. in Microelectronics from BITS Pilani, and M.Sc. in Physics (Electronics) from IIT Kharagpur, he brings a strong interdisciplinary background.He has over two decades of combined academic and industrial experience, having previously worked with leading organizations such as Tata Elxsi, Wipro, and C-DOT in ASIC, FPGA, and embedded system design.At NIT Rourkela, Dr. Acharya has significantly contributed to research and infrastructure development, establishing state-of-the-art labs including the Analog & Mixed-Signal IC Lab, IoT Lab, PCB Lab, and Reconfigurable System Design Lab. His teaching and research expertise span VLSI design, embedded systems, industrial IoT, and machine intelligence. He has authored and co-authored numerous research publications in reputed journals and conferences, with key contributions in PLL optimization, analog IC design, sparse signal acquisition, and memory architecture. He has also guided several doctoral students and led sponsored projects in advanced electronics and IoT.Recognized for his impactful research, Dr. Acharya has accumulated over 449 citations with an h-index of 13. His academic leadership, coupled with his industry experience, makes him a vital contributor to advancing innovation in VLSI, IoT, and next-generation embedded systems.",
     imageUrl:'/DPAcharya.jpg',

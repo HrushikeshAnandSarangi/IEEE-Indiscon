@@ -53,7 +53,7 @@ const navigationItems: NavItem[] = [
         href: "/camReady",
       },
       {
-        title: "Tentative Schedule",
+        title: "Final Schedule",
         href: "/tentativeSchedule",
       },
     ],
