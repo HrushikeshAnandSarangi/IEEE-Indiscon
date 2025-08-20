@@ -362,5 +362,18 @@ Alok received his Ph.D. from NIT Rourkela & has been a Post-Doctoral Researcher 
     title:"To be Updated",
     about:`To be Updated`
   },
+  {
+    id:"21",
+    name:"Dr. Debiprasad Priyabrata Acharya",
+    designation:"Proffessor",
+    university:"NIT Rourkela",
+    bio:"Dr. Debiprasad Priyabrata Acharya is a Professor in the Department of Electronics and Communication Engineering at NIT Rourkela. With a Ph.D. in VLSI Signal Processing from NIT Rourkela, M.E. in Microelectronics from BITS Pilani, and M.Sc. in Physics (Electronics) from IIT Kharagpur, he brings a strong interdisciplinary background.He has over two decades of combined academic and industrial experience, having previously worked with leading organizations such as Tata Elxsi, Wipro, and C-DOT in ASIC, FPGA, and embedded system design.At NIT Rourkela, Dr. Acharya has significantly contributed to research and infrastructure development, establishing state-of-the-art labs including the Analog & Mixed-Signal IC Lab, IoT Lab, PCB Lab, and Reconfigurable System Design Lab. His teaching and research expertise span VLSI design, embedded systems, industrial IoT, and machine intelligence. He has authored and co-authored numerous research publications in reputed journals and conferences, with key contributions in PLL optimization, analog IC design, sparse signal acquisition, and memory architecture. He has also guided several doctoral students and led sponsored projects in advanced electronics and IoT.Recognized for his impactful research, Dr. Acharya has accumulated over 449 citations with an h-index of 13. His academic leadership, coupled with his industry experience, makes him a vital contributor to advancing innovation in VLSI, IoT, and next-generation embedded systems.",
+    imageUrl:'/DPAcharya.jpg',
+    title:"Chip and Artificial Intelligence: A Symbiosis",
+    about:"The accelerating evolution of Artificial Intelligence (AI) is deeply intertwined with rapid advancements in semiconductor technology. A symbiotic relationship between AI and chip design, highlights how each drives progress in the other. On one hand, AI applications demand immense computational power, prompting innovations in chip architectures—such as Graphic Processing Units (GPU), Tensor Processing Units, neuromorphic processors, and edge AI chips—that are optimized for parallel processing and machine learning tasks. Chip design, spec-to-layout flow,  is iterative in nature. Large, complex System on Chips are divided into many modules. Each module proceeds through making of microarchitecture, RTL design and verification, logic synthesis, timing analysis, power analysis, floor-planning, placement, clock tree distribution, routing, and final signoff. AI is increasingly being used to automate and enhance chip design, in all the steps, reducing development time and increasing efficiency. This mutual reinforcement is accelerating both fields, enabling breakthroughs in autonomous systems, healthcare, defence, space and beyond. As AI models grow in complexity and ubiquity, the co-evolution of chips and AI will be central to the next wave of technological innovation."
+
+
+
+  }
 
 ];
